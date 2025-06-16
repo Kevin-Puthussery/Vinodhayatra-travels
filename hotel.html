@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotels by Destination</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+   <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@700&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        crossorigin="anonymous" />
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4287/4287725.png" />
+  <link rel="stylesheet" href="stay.html">
+</head>
+<body class="bg-[#FDF6E3] font-['Alegreya'] font-bold text-black">
+
+   
+  <section class="px-6 py-12 max-w-7xl mx-auto">
+    <!-- Heading -->
+    <h1 class="text-3xl font-bold mb-2">Search for places to stay by destination</h1>
+    <p class="text-lg text-gray-600 mb-6">Find Accommodation</p>
+
+    <!-- Description -->
+    <p class="text-sm text-gray-500 max-w-3xl mb-10">
+      Can I really save on places to stay near me and lodging in other popular destinations by using vinodha yatra?
+      Yes! vinodha yatra searches for accommodation deals on hundreds of accommodation comparison sites to help you
+      find deals on <a href="#" class="text-blue-600 underline">hotels</a>, holiday rentals and more.
+    </p>
+
+    <!-- Hotel dropdown grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-sm">
+      
+      <!-- Dropdown Template Start -->
+      <!-- Use this pattern for each location -->
+      <!-- Singapore Hotels -->
+      <div x-data="{ open: false }">
+        <button @click="open = !open" class="flex justify-between w-full font-medium pb-1 border-b">
+          Singapore hotels <span x-text="open ? '▲' : '▼'"></span>
+        </button>
+        <div x-show="open" x-transition class="mt-2 text-gray-600 space-y-2">
+          <ul class="list-disc pl-4 space-y-1">
+            <li>Marina Bay Sands - $280 <span class="text-yellow-500">★ 4.8</span></li>
+            <li>Orchard Hotel - $180 <span class="text-yellow-500">★ 4.2</span></li>
+            <li>Sentosa Resort - $230 <span class="text-yellow-500">★ 4.5</span></li>
+          </ul>
+          <button class="mt-2 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+            Book Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Mumbai Hotels -->
+      <div x-data="{ open: false }">
+        <button @click="open = !open" class="flex justify-between w-full font-medium pb-1 border-b">
+          Mumbai hotels <span x-text="open ? '▲' : '▼'"></span>
+        </button>
+        <div x-show="open" x-transition class="mt-2 text-gray-600 space-y-2">
+          <ul class="list-disc pl-4 space-y-1">
+            <li>The Taj Mahal Palace - $250 <span class="text-yellow-500">★ 4.7</span></li>
+            <li>The St. Regis - $210 <span class="text-yellow-500">★ 4.4</span></li>
+            <li>Trident Nariman Point - $190 <span class="text-yellow-500">★ 4.6</span></li>
+          </ul>
+          <button class="mt-2 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+            Book Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Bengaluru Hotels -->
+      <div x-data="{ open: false }">
+        <button @click="open = !open" class="flex justify-between w-full font-medium pb-1 border-b">
+          Bengaluru hotels <span x-text="open ? '▲' : '▼'"></span>
+        </button>
+        <div x-show="open" x-transition class="mt-2 text-gray-600 space-y-2">
+          <ul class="list-disc pl-4 space-y-1">
+            <li>The Leela Palace - $220 <span class="text-yellow-500">★ 4.6</span></li>
+            <li>ITC Gardenia - $200 <span class="text-yellow-500">★ 4.4</span></li>
+            <li>Taj West End - $240 <span class="text-yellow-500">★ 4.7</span></li>
+          </ul>
+          <button class="mt-2 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+            Book Now
+          </button>
+        </div>
+      </div>
+
+      <!-- New York Hotels -->
+      <div x-data="{ open: false }">
+        <button @click="open = !open" class="flex justify-between w-full font-medium pb-1 border-b">
+          New York hotels <span x-text="open ? '▲' : '▼'"></span>
+        </button>
+        <div x-show="open" x-transition class="mt-2 text-gray-600 space-y-2">
+          <ul class="list-disc pl-4 space-y-1">
+            <li>The Plaza - $400 <span class="text-yellow-500">★ 4.8</span></li>
+            <li>Pod Times Square - $180 <span class="text-yellow-500">★ 4.3</span></li>
+            <li>YOTEL NYC - $220 <span class="text-yellow-500">★ 4.1</span></li>
+          </ul>
+          <button class="mt-2 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+            Book Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Hyderabad Hotels -->
+      <div x-data="{ open: false }">
+        <button @click="open = !open" class="flex justify-between w-full font-medium pb-1 border-b">
+          Hyderabad hotels <span x-text="open ? '▲' : '▼'"></span>
+        </button>
+        <div x-show="open" x-transition class="mt-2 text-gray-600 space-y-2">
+          <ul class="list-disc pl-4 space-y-1">
+            <li>Taj Krishna - $160 <span class="text-yellow-500">★ 4.4</span></li>
+            <li>ITC Kakatiya - $140 <span class="text-yellow-500">★ 4.3</span></li>
+            <li>Novotel HICC - $170 <span class="text-yellow-500">★ 4.2</span></li>
+          </ul>
+          <button class="mt-2 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+            Book Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Toronto Hotels -->
+      <div x-data="{ open: false }">
+        <button @click="open = !open" class="flex justify-between w-full font-medium pb-1 border-b">
+          Toronto hotels <span x-text="open ? '▲' : '▼'"></span>
+        </button>
+        <div x-show="open" x-transition class="mt-2 text-gray-600 space-y-2">
+          <ul class="list-disc pl-4 space-y-1">
+            <li>Fairmont Royal York - $260 <span class="text-yellow-500">★ 4.5</span></li>
+            <li>One King West - $200 <span class="text-yellow-500">★ 4.4</span></li>
+            <li>The Hazelton Hotel - $280 <span class="text-yellow-500">★ 4.7</span></li>
+          </ul>
+          <button class="mt-2 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+            Book Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Dubai Hotels -->
+      <div x-data="{ open: false }">
+        <button @click="open = !open" class="flex justify-between w-full font-medium pb-1 border-b">
+          Dubai hotels <span x-text="open ? '▲' : '▼'"></span>
+        </button>
+        <div x-show="open" x-transition class="mt-2 text-gray-600 space-y-2">
+          <ul class="list-disc pl-4 space-y-1">
+            <li>Burj Al Arab - $500 <span class="text-yellow-500">★ 4.9</span></li>
+            <li>Atlantis The Palm - $420 <span class="text-yellow-500">★ 4.8</span></li>
+            <li>Jumeirah Beach Hotel - $350 <span class="text-yellow-500">★ 4.6</span></li>
+          </ul>
+          <button class="mt-2 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+            Book Now
+          </button>
+        </div>
+      </div>
+
+      <!-- London Hotels -->
+      <div x-data="{ open: false }">
+        <button @click="open = !open" class="flex justify-between w-full font-medium pb-1 border-b">
+          London hotels <span x-text="open ? '▲' : '▼'"></span>
+        </button>
+        <div x-show="open" x-transition class="mt-2 text-gray-600 space-y-2">
+          <ul class="list-disc pl-4 space-y-1">
+            <li>The Savoy - $390 <span class="text-yellow-500">★ 4.7</span></li>
+            <li>Claridge’s - $370 <span class="text-yellow-500">★ 4.8</span></li>
+            <li>The Ritz - $410 <span class="text-yellow-500">★ 4.9</span></li>
+          </ul>
+          <button class="mt-2 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+            Book Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Gokarna Hotels -->
+      <div x-data="{ open: false }">
+        <button @click="open = !open" class="flex justify-between w-full font-medium pb-1 border-b">
+          Gokarna hotels <span x-text="open ? '▲' : '▼'"></span>
+        </button>
+        <div x-show="open" x-transition class="mt-2 text-gray-600 space-y-2">
+          <ul class="list-disc pl-4 space-y-1">
+            <li>Kudle Beach View - $120 <span class="text-yellow-500">★ 4.3</span></li>
+            <li>Zostel Gokarna - $90 <span class="text-yellow-500">★ 4.1</span></li>
+            <li>Sanskruti Resort - $130 <span class="text-yellow-500">★ 4.2</span></li>
+          </ul>
+          <button class="mt-2 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+            Book Now
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <a href="booking.html"><button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+  Book Now
+</button></a>
+
+</body>
+</html>

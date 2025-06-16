@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vinodhayatra</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    crossorigin="anonymous" />
+
+
+    
+  <style>
+    body {
+      font-family: 'Alegreya', serif;
+      font-weight: 700;
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-800">
+
+  <!-- Header / Navbar -->
+  <header>
+    <nav class="bg-white shadow px-4 py-4">
+      <div class="flex items-center justify-between max-w-7xl mx-auto">
+        <div class="flex items-center gap-14">
+          <div class="flex items-center" style="width: 150px;height: 30px;">
+            <a href="#" class=""><img src="./media/favicon.png" alt=""></a>
+          </div>
+          <input
+            class=" hidden sm:block w-72 md:w-96 px-5 py-2 rounded-full border-2 bg-gray-400 placeholder-gray-100 text-white focus:outline-none"
+            type="text" placeholder="Where do you want to go?🔍" />
+
+        </div>
+
+        <div class="hidden md:flex items-center gap-6 text-sm">
+          <div class="flex items-center gap-2">
+            <button class="bg-orange-500 hover:bg-purple-500 text-white px-4 py-2 rounded-lg w-full">Sign In</button>
+          </div>
+          <div class="flex items-center gap-2">
+            <span role="img" aria-label="smile">😊</span>
+            <div>
+              <div class="font-medium">1M+ Travelled</div>
+              <div class="text-xs">Happy Guest</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <span role="img" aria-label="diamond">💎</span>
+            <div>
+              <div class="font-medium">All Group Tours</div>
+              <div class="text-xs">Family Tours</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-2 font-bold">
+            <span role="img" aria-label="phone">📞</span>
+            <span>1800 266 1100</span>
+          </div>
+
+          <button
+            class="bg-purple-800 hover:bg-yellow-600 text-white px-4 py-2 rounded-lg transition-all duration-200">Book
+            With Expert</button>
+        </div>
+        <button id="menuBtn" class="md:hidden focus:outline-none text-xl">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Nav -->
+      <div id="mobileMenu" class="hidden md:hidden mt-4 space-y-4 text-sm px-2">
+        <div class="">
+          <button class="bg-orange-500 hover:bg-purple-500 text-white px-4 py-2 rounded-lg w-full">Sign In</button>
+        </div>
+        <div class="flex gap-2 items-center">
+          <span>😊</span>
+          <div>
+            <div class="font-medium">1M+ Travelled</div>
+            <div class="text-xs">Happy Guest</div>
+          </div>
+        </div>
+        <div class="flex gap-2 items-center">
+          <span>💎</span>
+          <div>
+            <div class="font-medium">All Group Tours</div>
+            <div class="text-xs">Family Tours</div>
+          </div>
+        </div>
+        <div class="flex gap-2 items-center font-bold">
+          <span>📞</span>
+          <span>1800 266 1100</span>
+        </div>
+        <button class="bg-green-500 hover:bg-purple-500 text-white px-4 py-2 rounded-lg w-full">Book With
+          Expert</button>
+      </div>
+    </nav>
+
+    <!-- Navigation Links -->
+
+    <div class="bg-gray-200 px-4 py-6">
+  <div class="max-w-8xl mx-auto flex justify-between items-center font-semibold text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
+    
+
+    <!-- Centered Nav Links -->
+        <div class="hidden md:flex space-x-8 absolute left-1/2 transform -translate-x-1/2">
+          <a href="./index.html" class="text-black-700 hover:text-purple-600 text-2xl">HOME</a>
+          <a href="./destination.html" class="text-black-700 hover:text-purple-600 text-2xl">HOLIDAYS</a>
+          <a href="./stays.html" class="text-black-700 hover:text-purple-600 text-2xl">STAYS</a>
+          <a href="./services.html" class="text-black-700 hover:text-purple-600 text-2xl">SERVICES</a>
+          <a href="./bookings.html" class="text-black-700 hover:text-purple-600 text-2xl">BOOKINGS</a>
+        </div>
+
+        <!-- Mobile menu button -->
+        <div class="md:hidden flex items-center">
+          <button id="menu-btn" class="text-black focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="bg-gray-200 md:hidden hidden px-4 pt-13 pb-4 space-y-1">
+      <a href="./index.html" class="block text-gray-700 hover:text-indigo-600 text-xl">HOME</a>
+      <a href="./destination.html" class="block text-gray-700 hover:text-indigo-600 text-xl">HOLIDAYS</a>
+      <a href="./stays.html" class="block text-gray-700 hover:text-indigo-600 text-xl">STAYS</a>
+      <a href="./services.html" class="block text-gray-700 hover:text-indigo-600 text-xl">SERVICES</a>
+      <a href="./bookings.html" class="block text-gray-700 hover:text-indigo-600 text-xl">BOOKINGS</a>
+    </div>
+
+
+  </header>
+
+  <!-- Hero Banner -->
+  <section aria-label="Hero Image" class="w-full h-96 md:h-screen bg-cover bg-center"
+    style="background-image: url('https://static.vecteezy.com/system/resources/previews/004/928/975/original/travel-around-the-world-landmark-design-famous-landmarks-around-the-world-elements-with-travel-vacation-text-in-blue-background-illustration-vector.jpg');">
+  </section>
+
+  <section class="bg-gray-200 py-12 px-4 md:px-16 lg:px-32">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-2xl md:text-3xl font-semibold text-blue-800 mb-6">
+        Tours and Travel Agency - Vinodhayatra
+      </h2>
+
+      <p class="text-gray-900 text-lg italic mb-4 [text-align:justify]">
+        “Every journey begins with a single step — we make sure it's the right one.”
+      </p>
+
+      <p class="text-gray-700 md:text-lg mb-6 [text-align:justify]">
+        At <span class="font-semibold text-blue-700">Vinodhayatra</span>, travel isn't just a trip — it's an experience,
+        a memory, a story waiting to be written. With a passion for exploration and a commitment to service, we design
+        journeys that go beyond sightseeing, helping you connect with cultures, discover new perspectives, and return
+        home richer in spirit. From serene landscapes to vibrant cities, we offer handpicked destinations and
+        personalized itineraries tailored to your preferences. Whether it's a peaceful getaway or an adrenaline-filled
+        adventure, we ensure every detail is thoughtfully curated.
+      </p>
+
+      <p class="text-gray-700 md:text-lg mb-6 [text-align:justify]">
+        At Vinodhayatra, we don't believe in one-size-fits-all. Every traveler is different — and so is every journey we
+        create. Whether you're planning a family vacation, a romantic escape, a cultural expedition, or a solo
+        soul-search,
+        we're here to make it memorable.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- Section: International -->
+  <section class="p-6">
+    <h2 class="text-3xl font-semibold text-center text-blue-800 mb-2">Trending Holiday Packages</h2>
+    <p class="text-center mb-6">Whether it's your first international trip or you've travelled abroad multiple times,
+      planning a holiday to a distant land is always a special...</p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+      <!-- Card -->
+      <div
+        class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transform transition duration-300 hover:scale-105">
+        <img src="https://wallpaperaccess.com/full/2827309.jpg" alt="Europe" class="w-full h-40 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Fusion Europe</h3>
+          <p class="text-blue-700 font-bold">₹2,76,600.00</p>
+          <p class="text-sm text-gray-500">Starting Price</p>
+        </div>
+      </div>
+
+      <div
+        class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transform transition duration-300 hover:scale-105">
+        <img src="https://wallpaperaccess.com/full/2751126.jpg" alt="Thailand" class="w-full h-40 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Thai Getway</h3>
+          <p class="text-blue-700 font-bold">₹58,100.00</p>
+          <p class="text-sm text-gray-500">Starting Price</p>
+        </div>
+      </div>
+
+      <div
+        class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transform transition duration-300 hover:scale-105">
+        <img src="https://wallpaperaccess.com/full/1722772.jpg" alt="Singapore" class="w-full h-40 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Singapore Getway</h3>
+          <p class="text-blue-700 font-bold">₹93,600.00</p>
+          <p class="text-sm text-gray-500">Starting Price</p>
+        </div>
+      </div>
+
+      <div
+        class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transform transition duration-300 hover:scale-105">
+        <img src="https://wallpaperaccess.com/full/1722116.jpg" alt="Australia" class="w-full h-40 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Grand Bargain Australia</h3>
+          <p class="text-blue-700 font-bold">₹3,04,300.00</p>
+          <p class="text-sm text-gray-500">Starting Price</p>
+        </div>
+      </div>
+
+      <div
+        class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transform transition duration-300 hover:scale-105">
+        <img src="https://wallpaperaccess.com/full/1703474.jpg" alt="Mauritius" class="w-full h-40 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Mauritius</h3>
+          <p class="text-blue-700 font-bold">₹2,17,900.00</p>
+          <p class="text-sm text-gray-500">Starting Price</p>
+        </div>
+      </div>
+      <div
+        class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transform transition duration-300 hover:scale-105">
+        <img src="https://cdn.wallpapersafari.com/54/54/CojyGf.jpg" alt="Dubai" class="w-full h-40 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Dubai</h3>
+          <p class="text-blue-700 font-bold">₹1,14,500.00</p>
+          <p class="text-sm text-gray-500">Starting Price</p>
+        </div>
+      </div>
+      <div
+        class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transform transition duration-300 hover:scale-105">
+        <img src="https://wallpapercave.com/wp/wp4359104.jpg" alt="Australia" class="w-full h-40 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Maldivies</h3>
+          <p class="text-blue-700 font-bold">₹4,20,000.00</p>
+          <p class="text-sm text-gray-500">Starting Price</p>
+        </div>
+      </div>
+      <div
+        class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transform transition duration-300 hover:scale-105">
+        <img src="https://wallpapercave.com/wp/wp4233390.jpg" alt="Australia" class="w-full h-40 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Switzerland</h3>
+          <p class="text-blue-700 font-bold">₹1,74,480.00</p>
+          <p class="text-sm text-gray-500">Starting Price</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="relative bg-cover bg-center h-[500px] mt-1"
+    style="background-image: url('https://www.bristoltravelclinic.co.uk/wp-content/uploads/2018/07/Header1-compressor.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+      <div class="text-center text-white">
+        <h1 class="text-5xl font-bold">More than travel — we craft experiences.</h1>
+        <p class="text-2xl mt-4">Reach out. Your journey awaits.</p>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: India & Around -->
+  <section class="p-6 mt-10 bg-white">
+    <h2 class="text-3xl font-semibold text-center text-blue-800 mb-2">India & Around Holiday Packages</h2>
+    <p class="text-center mb-6">Traveling abroad is great, but there's nothing like the diversity of Indian landscapes.
+      Explore top selling packages...</p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+        <img src="https://cdn.pixabay.com/photo/2017/05/10/13/39/ladakh-2300904_640.jpg" alt="Ladakh"
+          class="w-full h-40 object-cover">
+        <p class="p-1 text-center">Ladakh</p>
+      </div>
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+        <img
+          src="https://th.bing.com/th/id/R.d4b982dc0b9b3b2bf598df85cca53b04?rik=A%2bdvghH3SSORjg&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fcqmpGqQ.jpg&ehk=7bCV%2bNwXKVo2KV8ugI%2fzAK4ltNIoYFntxYUgZZtYYPE%3d&risl=&pid=ImgRaw&r=0"
+          alt="Kerala" class="w-full h-40 object-cover">
+        <p class="p-1 text-center">Kerala</p>
+      </div>
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+        <img
+          src="https://static.wixstatic.com/media/8e9165_014ed08d47034ecc8f7e4d3ddd9cbbf0~mv2.jpg/v1/fill/w_768,h_614,al_c,lg_1,q_85/8e9165_014ed08d47034ecc8f7e4d3ddd9cbbf0~mv2.jpg"
+          alt="Jim Corbett" class="w-full h-40 object-cover">
+        <p class="p-1 text-center">Jim Corbet</p>
+      </div>
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+        <img src="https://www.worldatlas.com/r/w1200-q80/upload/70/33/ab/shutterstock-115227475.jpg" alt="Kashmir"
+          class="w-full h-40 object-cover">
+        <p class="p-1 text-center">Kashmir</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- testimonials -->
+
+  <section class="bg-slate-500 text-white py-12 px-4">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-5xl font-bold mb-4">Our Happy Travellers</h2>
+      <p class="mb-10 text-lg">Customer satisfaction is our major goal. See what our travelers say about
+        us.</p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div class="bg-white text-gray-800 p-6 rounded-xl shadow-md">
+          <h3 class="font-bold text-lg mb-2">Solo Trip to Sikkim with Vinodhayatra</h3>
+          <p class="text-sm mb-4">“I am truly pleased to share my experience. From delicious food to comfy stays and
+            expert planning — it was smooth and joyful!”</p>
+          <div class="flex items-center gap-3 mt-auto">
+
+            <div>
+              <p class="font-semibold text-red-600">Bakulesh Vora</p>
+              <p class="text-sm text-gray-600">oct 05, 2024</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="bg-white text-gray-800 p-6 rounded-xl shadow-md">
+          <h3 class="font-bold text-lg mb-2">Joyful Himachal Experience</h3>
+          <p class="text-sm mb-4">“We had a thoroughly enjoyable trip to Himachal. Everything was well-organized and the
+            guidance from the team was excellent.”</p>
+          <div class="flex items-center gap-3 mt-auto">
+
+            <div>
+              <p class="font-semibold text-red-600">Satish Pandit</p>
+              <p class="text-sm text-gray-600">May 19, 2020</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="bg-white text-gray-800 p-6 rounded-xl shadow-md">
+          <h3 class="font-bold text-lg mb-2">My First International Tour</h3>
+          <p class="text-sm mb-4">“An amazing international tour! The tour manager was kind and informative, and
+            everything was perfectly handled.”</p>
+          <div class="flex items-center gap-3 mt-auto">
+
+            <div>
+              <p class="font-semibold text-red-600">Rakesh Mhamunkar</p>
+              <p class="text-sm text-gray-600">Jan 10, 2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- See All Button -->
+      <div class="mt-10">
+        <button class="bg-red-700 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition">
+          See All
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-10">
+  <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+
+    <!-- Logo and Social Icons -->
+    <div class="space-x-2">
+      <div class="w-42 h-auto" style="margin-left: -50px;margin-top: -90px;">
+        <img src="./media/favicon.png" alt="Logo" class="" style="margin-top:-50px ;">
+      </div>
+     <div class="flex space-x-4" style="margin-top: -100px;padding-left: 30px;">
+        <a href="#" class="p-2 rounded-full hover:text-purple-600">
+          <i class="fab fa-twitter text-2xl sm:text-3xl"></i>
+        </a>
+        <a href="#" class="p-2 rounded-full hover:text-purple-600">
+          <i class="fab fa-facebook-f text-2xl sm:text-3xl"></i>
+        </a>
+        <a href="#" class="p-2 rounded-full hover:text-purple-600">
+          <i class="fab fa-instagram text-2xl sm:text-3xl"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Information Links -->
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Information</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:text-purple-600">Online Enquiry</a></li>
+        <li><a href="#" class="hover:text-purple-600">General Enquiry</a></li>
+        <li><a href="#" class="hover:text-purple-600">Booking</a></li>
+        <li><a href="#" class="hover:text-purple-600">Privacy</a></li>
+        <li><a href="#" class="hover:text-purple-600">Refund Policy</a></li>
+        <li><a href="#" class="hover:text-purple-600">Call Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Experience Links -->
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Experience</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:text-purple-600">Adventure</a></li>
+        <li><a href="#" class="hover:text-purple-600">Hotel and Restaurant</a></li>
+        <li><a href="#" class="hover:text-purple-600">Beach</a></li>
+        <li><a href="#" class="hover:text-purple-600">Nature</a></li>
+        <li><a href="#" class="hover:text-purple-600">Camping</a></li>
+        <li><a href="#" class="hover:text-purple-600">Party</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Have a Question?</h3>
+      <ul class="space-y-4 text-sm">
+        <li class="flex items-start space-x-2">
+          <i class="fas fa-map-marker-alt mt-1"></i>
+          <span>203 Fake St. Mountain View, San Francisco, California, USA</span>
+        </li>
+        <li class="flex items-center space-x-2">
+          <i class="fas fa-phone"></i>
+          <span>022-6423863</span>
+        </li>
+        <li class="flex items-center space-x-2">
+          <i class="fas fa-envelope"></i>
+          <span>info@vinodhayatra.com</span>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
+
+  <!-- Toggle Mobile Menu -->
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+  
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('mobile-menu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+  </script>
+</body>
+
+</html>

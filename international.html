@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinodhayatra :: International Tour</title>
+  <!--Tailwind Css CDN-->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!--Favicons-->
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4287/4287725.png"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--Google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Play:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech&family=Space+Grotesk:wght@300..700&family=Tagesschrift&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@700&display=swap" rel="stylesheet">
+  <!--Stylesheet-->
+  <link rel="stylesheet" href="./style.css">
+  <!--Favicon-->
+  <link rel="icon" href="./media/favicon.png">
+  <!--Fontawesome CDN-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+      font-family: 'Alegreya', serif;
+  font-weight: 700;
+      background-color: #FDF6E3;
+      font-style: normal;
+    }
+  </style>
+</head>
+
+<body class="">
+
+ <!--navbar-->
+  <nav class="">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div class="flex justify-between items-center h-16 relative">
+
+        <!-- Logo (left) -->
+        <div class="flex items-center" style="width: 180px;">
+          <a href="#" class=""><img src="./media/favicon.png" alt=""></a>
+        </div>
+
+        <!-- Centered Nav Links -->
+        <div class="hidden md:flex space-x-8 items-center absolute left-1/2 transform -translate-x-1/2">
+          <a href="./index.html" class="text-black-700 hover:text-purple-600 text-2xl">HOME</a>
+          <a href="./destination.html" class="text-black-700 hover:text-purple-600 text-2xl">HOLIDAYS</a>
+          <a href="./stays.html" class="text-black-700 hover:text-purple-600 text-2xl">STAYS</a>
+          <a href="./services.html" class="text-black-700 hover:text-purple-600 text-2xl">SERVICES</a>
+          <a href="./bookings.html" class="text-black-700 hover:text-purple-600 text-2xl">BOOKINGS</a>
+        </div>
+
+        <!-- Mobile menu button -->
+        <div class="md:hidden flex items-center">
+          <button id="menu-btn" class="text-black focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pt-13 pb-4 space-y-1">
+      <a href="./index.html" class="block text-gray-700 hover:text-indigo-600 text-xl">HOME</a>
+      <a href="./destination.html" class="block text-gray-700 hover:text-indigo-600 text-xl">HOLIDAYS</a>
+      <a href="./stays.html" class="block text-gray-700 hover:text-indigo-600 text-xl">STAYS</a>
+      <a href="./services.html" class="block text-gray-700 hover:text-indigo-600 text-xl">SERVICES</a>
+      <a href="./bookings.html" class="block text-gray-700 hover:text-indigo-600 text-xl">BOOKINGS</a>
+    </div>
+  </nav>
+
+<!--banner-->
+
+<div
+    class="opacity-80 w-full h-64 md:h-90 bg-[url('https://thedreamplanner.co.in/storage/app/public/images/gallery/NfdCaJwUbz4jGFM7rvGp1nl45KhAMysNwcgxp4Wc.jpg')] bg-cover bg-center">
+  </div>
+
+
+
+
+  <!-- Tour packages -->
+   <div class="">
+   <h3 class="text-3xl text-center pt-5 py-2">Most Visited Destinations !!!</h3>
+ <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4 bg-gray-100">
+
+
+<div class="bg-white rounded-2xl shadow-md overflow-hidden">
+      <div class="relative">
+    <a href="./booking1.html"><img src="https://dashboard.somansleisuretours.com/uploads/vietnam_cambodia_tour_package_f98e0f3fd6.webp" class="w-full h-48 object-cover rounded-t-2xl">
+    <span class="absolute bottom-2 left-2 text-black text-sm font-semibold px-2 py-2 rounded">₹20,000 per person</span>
+  </div>
+  <div class="p-4">
+    <p class="text-xs uppercase text-gray-400 tracking-widest">5 Days Tour</p>
+    <h3 class="text-lg font-medium text-gray-800 mt-1">Vietnam(2N) + Cambodia(2N)</h3>
+    <div class="flex items-center justify-between mt-2">
+      <div class="flex space-x-1 text-rose-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+      </div>
+      <span class="text-sm text-gray-400">(123 reviews)</span>
+    </div>
+  </div></a>
+</div>
+
+<div class="bg-white rounded-2xl shadow-md overflow-hidden">
+  <div class="relative">
+    <a href="./booking1.html"><img src="https://www.flamingotravels.co.in/blog/wp-content/uploads/2019/10/Singapore-malaysia-thailand-tour-packages.jpg" class="w-full h-48 object-cover rounded-t-2xl">
+    <span class="absolute bottom-2 left-2 text-black text-sm font-semibold px-2 py-2 rounded">₹60,000 per person</span>
+  </div>
+  <div class="p-4">
+    <p class="text-xs uppercase text-gray-400 tracking-widest">7 Days Tour</p>
+    <h3 class="text-lg font-medium text-gray-800 mt-1">Singapore(3N) + Malaysia(2N) + Thailand(1N)</h3>
+    <div class="flex items-center justify-between mt-2">
+      <div class="flex space-x-1 text-rose-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+      </div>
+      <span class="text-sm text-gray-400">(500 reviews)</span>
+    </div>
+  </div></a>
+</div>
+
+<div class="bg-white rounded-2xl shadow-md overflow-hidden">
+  <div class="relative">
+    <a href="./booking1.html"><img src="https://www.travelonatimebudget.co.uk/wp-content/uploads/2024/07/Romantic-cities.jpg" class="w-full h-48 object-cover rounded-t-2xl">
+    <span class="absolute bottom-2 left-2 text-black text-sm font-semibold px-2 py-2 rounded">₹1,05,000 per person</span>
+  </div>
+  <div class="p-4">
+    <p class="text-xs uppercase text-gray-400 tracking-widest">10 Days Tour</p>
+    <h3 class="text-lg font-medium text-gray-800 mt-1">Grand Europe</h3>
+    <div class="flex items-center justify-between mt-2">
+      <div class="flex space-x-1 text-rose-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+      </div>
+      <span class="text-sm text-gray-400">(30 reviews)</span>
+    </div>
+  </div></a>
+</div>
+
+<div class="bg-white rounded-2xl shadow-md overflow-hidden">
+  <div class="relative">
+    <a href="./booking1.html"><img src="https://www.innovativetechin.com/images/ourservice/holidaypackage/U.S.A/1.jpg" class="w-full h-48 object-cover rounded-t-2xl">
+    <span class="absolute bottom-2 left-2 text-black text-sm font-semibold px-2 py-2 rounded">₹1,20,000 per person</span>
+  </div>
+  <div class="p-4">
+    <p class="text-xs uppercase text-gray-400 tracking-widest">20 Days Tour</p>
+    <h3 class="text-lg font-medium text-gray-800 mt-1">North American Wonder USA(10N) + CANADA(10N)</h3>
+    <div class="flex items-center justify-between mt-2">
+      <div class="flex space-x-1 text-rose-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+      </div>
+      <span class="text-sm text-gray-400">(20 reviews)</span>
+    </div>
+  </div></a>
+</div>
+
+<div class="bg-white rounded-2xl shadow-md overflow-hidden">
+      <div class="relative">
+    <a href="./booking1.html"><img src="https://www.arvholidays.in/images/newzealandbanner.jpg" class="w-full h-48 object-cover rounded-t-2xl">
+    <span class="absolute bottom-2 left-2 text-black text-sm font-semibold px-2 py-2 rounded">₹50,000 per person</span>
+  </div>
+  <div class="p-4">
+    <p class="text-xs uppercase text-gray-400 tracking-widest">10 Days Tour</p>
+    <h3 class="text-lg font-medium text-gray-800 mt-1">Australia(5N) + New-Zeland(5N)</h3>
+    <div class="flex items-center justify-between mt-2">
+      <div class="flex space-x-1 text-rose-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+      </div>
+      <span class="text-sm text-gray-400">(120 reviews)</span>
+    </div>
+  </div></a>
+</div>
+
+<div class="bg-white rounded-2xl shadow-md overflow-hidden">
+  <div class="relative">
+    <a href="./booking1.html"><img src="https://www.wendywutours.com.au/resource/upload/234/japan-tour-banner.jpg.webp" class="w-full h-48 object-cover rounded-t-2xl">
+    <span class="absolute bottom-2 left-2 text-black text-sm font-semibold px-2 py-2 rounded">₹40,000 per person</span>
+  </div>
+  <div class="p-4">
+    <p class="text-xs uppercase text-gray-400 tracking-widest">5 Days Tour</p>
+    <h3 class="text-lg font-medium text-gray-800 mt-1">Majestic Japan</h3>
+    <div class="flex items-center justify-between mt-2">
+      <div class="flex space-x-1 text-rose-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+      </div>
+      <span class="text-sm text-gray-400">(100 reviews)</span>
+    </div>
+  </div></a>
+</div>
+
+<div class="bg-white rounded-2xl shadow-md overflow-hidden">
+  <div class="relative">
+    <a href="./booking1.html"><img src="https://veetrips.com/wp-content/uploads/elementor/thumbs/Dubai-Tour-Package-From-Delhi-1245-qy1twnt0hkiefjxc6idmjyrho3ol9r113zggme13io.jpg" class="w-full h-48 object-cover rounded-t-2xl">
+    <span class="absolute bottom-2 left-2 text-black text-sm font-semibold px-2 py-2 rounded">₹25,000 per pax</span>
+  </div>
+  <div class="p-4">
+    <p class="text-xs uppercase text-gray-400 tracking-widest">5 Days Tour</p>
+    <h3 class="text-lg font-medium text-gray-800 mt-1">Dubai(3N)+Abu Dhabi(2N)</h3>
+    <div class="flex items-center justify-between mt-2">
+      <div class="flex space-x-1 text-rose-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+      </div>
+      <span class="text-sm text-gray-400">(30 reviews)</span>
+    </div>
+  </div></a>
+</div>
+
+<div class="bg-white rounded-2xl shadow-md overflow-hidden">
+  <div class="relative">
+    <a href="./booking1.html"><img src="https://www.gokitetours.com/wp-content/uploads/2019/10/turkey-tour-packages-from-India.webp" class="w-full h-48 object-cover rounded-t-2xl">
+    <span class="absolute bottom-2 left-2 text-black text-sm font-semibold px-2 py-2 rounded">₹30,000 per person</span>
+  </div>
+  <div class="p-4">
+    <p class="text-xs uppercase text-gray-400 tracking-widest">4 Days Tour</p>
+    <h3 class="text-lg font-medium text-gray-800 mt-1">Beautiful Turkey</h3>
+    <div class="flex items-center justify-between mt-2">
+      <div class="flex space-x-1 text-rose-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+      </div>
+      <span class="text-sm text-gray-400">(20 reviews)</span>
+    </div>
+  </div></a>
+</div>
+
+
+
+</div>
+</div>
+
+
+<div class="relative overflow-hidden w-full h-74">
+<div id="carousel" class="flex transition-transform duration-500 ease-in-out">
+
+<div class="min-w-full h-94 bg-blue-500 flex items-center justify-center text-white text-2xl">
+  <div
+    class="opacity-70 w-full h-30 md:h-96 bg-[url('https://www.thomascook.in/images/international-page/2025/may/Honeymoon2.jpg')] bg-cover bg-center">
+  </div>
+</div>
+<div class="min-w-full h-94 bg-blue-500 flex items-center justify-center text-white text-2xl">
+  <div
+    class="opacity-70 w-full h-64 md:h-96 bg-[url('https://www.gtholidays.in/wp-content/uploads/2022/02/International-Honeymoon-Packages.jpg')] bg-cover bg-center">
+  </div>
+</div>
+<div class="min-w-full h-94 bg-blue-500 flex items-center justify-center text-white text-2xl">
+  <div
+    class="opacity-90 w-full h-64 md:h-96 bg-[url('https://www.indianholiday.com/wordpress/wp-content/uploads/2025/04/honeymoon-in-maldives-1146.jpeg')] bg-cover bg-center">
+  </div>
+</div>
+
+  </div>
+  </div> 
+
+
+
+<div class="">
+   <h3 class="text-3xl text-center pt-4 py-2">Romantic getaways Holiday Packages !!!</h3>
+ <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4 bg-gray-100">
+
+
+<div class="bg-white rounded-2xl shadow-md overflow-hidden">
+      <div class="relative">
+    <a href="./booking1.html"><img src="https://www.welgrowgroup.com/img.php?file=welgrowgroupuploadsNew/package/images/pkg_156837071280_maldive-5.jpg" class="w-full h-48 object-cover rounded-t-2xl">
+    <span class="absolute bottom-2 left-2 text-black text-sm font-semibold px-2 py-2 rounded">₹1,00,000 per person</span>
+  </div>
+  <div class="p-4">
+    <p class="text-xs uppercase text-gray-400 tracking-widest">5 Days Tour</p>
+    <h3 class="text-lg font-medium text-gray-800 mt-1">Maldives Honeymoon</h3>
+    <div class="flex items-center justify-between mt-2">
+      <div class="flex space-x-1 text-rose-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+      </div>
+      <span class="text-sm text-gray-400">(120 reviews)</span>
+    </div>
+  </div></a>
+</div>
+
+<div class="bg-white rounded-2xl shadow-md overflow-hidden">
+  <div class="relative">
+    <a href="./booking1.html"><img src="https://c.myholidays.com/packages/8087cc50-53d5-45a3-9677-c97e6354c33e/original/27642901-7826-4843-8657-0c6df8d71816.webp" class="w-full h-48 object-cover rounded-t-2xl">
+    <span class="absolute bottom-2 left-2 text-black text-sm font-semibold px-2 py-2 rounded">₹80,000 per person</span>
+  </div>
+  <div class="p-4">
+    <p class="text-xs uppercase text-gray-400 tracking-widest">5 Days Tour</p>
+    <h3 class="text-lg font-medium text-gray-800 mt-1">Bali(3N) + Phuket(2N) Honeymoon</h3>
+    <div class="flex items-center justify-between mt-2">
+      <div class="flex space-x-1 text-rose-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+      </div>
+      <span class="text-sm text-gray-400">(100 reviews)</span>
+    </div>
+  </div></a>
+</div>
+
+<div class="bg-white rounded-2xl shadow-md overflow-hidden">
+  <div class="relative">
+    <a href="./booking1.html"><img src="https://media1.thrillophilia.com/filestore/mh1qqrtgnyqlhqvv2gzudj777nr5_shutterstock_1722542605.jpg" class="w-full h-48 object-cover rounded-t-2xl">
+    <span class="absolute bottom-2 left-2 text-black text-sm font-semibold px-2 py-2 rounded">₹95,000 per person</span>
+  </div>
+  <div class="p-4">
+    <p class="text-xs uppercase text-gray-400 tracking-widest">6 Days Tour</p>
+    <h3 class="text-lg font-medium text-gray-800 mt-1">Mauritius Honeymoon</h3>
+    <div class="flex items-center justify-between mt-2">
+      <div class="flex space-x-1 text-rose-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+      </div>
+      <span class="text-sm text-gray-400">(30 reviews)</span>
+    </div>
+  </div></a>
+</div>
+
+<div class="bg-white rounded-2xl shadow-md overflow-hidden">
+  <div class="relative">
+    <a href="./booking1.html"><img src="https://media1.thrillophilia.com/filestore/tiw9gfn71j8fpwnw3l0ifvsbn4w5_shutterstock_1828136579.jpg" class="w-full h-48 object-cover rounded-t-2xl">
+    <span class="absolute bottom-2 left-2 text-black text-sm font-semibold px-2 py-2 rounded">₹1,20,000 per person</span>
+  </div>
+  <div class="p-4">
+    <p class="text-xs uppercase text-gray-400 tracking-widest">3 Days Tour</p>
+    <h3 class="text-lg font-medium text-gray-800 mt-1">Honeymoon @Switzerland</h3>
+    <div class="flex items-center justify-between mt-2">
+      <div class="flex space-x-1 text-rose-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+      </div>
+      <span class="text-sm text-gray-400">(20 reviews)</span>
+    </div>
+  </div></a>
+</div>
+
+<div class="bg-white rounded-2xl shadow-md overflow-hidden">
+  <div class="relative">
+     <a href="./booking1.html"><img src="https://www.zicasso.com/static/a0f318bfeb9d94858a70685df0ff1d8d/304cc/a0f318bfeb9d94858a70685df0ff1d8d.jpg" class="w-full h-48 object-cover rounded-t-2xl">
+    <span class="absolute bottom-2 left-2 text-black text-sm font-semibold px-2 py-2 rounded">₹90,000 per person</span>
+  </div>
+  <div class="p-4">
+    <p class="text-xs uppercase text-gray-400 tracking-widest">5 Days Tour</p>
+    <h3 class="text-lg font-medium text-gray-800 mt-1">Greek Honeymoon</h3>
+    <div class="flex items-center justify-between mt-2">
+      <div class="flex space-x-1 text-rose-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+      </div>
+      <span class="text-sm text-gray-400">(20 reviews)</span>
+    </div>
+  </div></a>
+</div>
+
+<div class="bg-white rounded-2xl shadow-md overflow-hidden">
+  <div class="relative">
+    <a href="./booking1.html"><img src="https://www.k1travels.com/wp-content/uploads/2019/08/tour.jpg" class="w-full h-48 object-cover rounded-t-2xl">
+    <span class="absolute bottom-2 left-2 text-black text-sm font-semibold px-2 py-2 rounded">₹25,000 per person</span>
+  </div>
+  <div class="p-4">
+    <p class="text-xs uppercase text-gray-400 tracking-widest">3 Days Tour</p>
+    <h3 class="text-lg font-medium text-gray-800 mt-1">Honeymoon @Thailand</h3>
+    <div class="flex items-center justify-between mt-2">
+      <div class="flex space-x-1 text-rose-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+      </div>
+      <span class="text-sm text-gray-400">(20 reviews)</span>
+    </div>
+  </div></a>
+</div>
+
+<div class="bg-white rounded-2xl shadow-md overflow-hidden">
+  <div class="relative">
+    <a href="./booking1.html"><img src="https://3saestate.com/wp-content/uploads/2024/06/shutterstock_2386280701-2048x1366.jpg" class="w-full h-48 object-cover rounded-t-2xl">
+    <span class="absolute bottom-2 left-2 text-black text-sm font-semibold px-2 py-2 rounded">₹43,000 per person</span>
+  </div>
+  <div class="p-4">
+    <p class="text-xs uppercase text-gray-400 tracking-widest">4 Days Tour</p>
+    <h3 class="text-lg font-medium text-gray-800 mt-1">Dubai Honeymoon</h3>
+    <div class="flex items-center justify-between mt-2">
+      <div class="flex space-x-1 text-rose-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+      </div>
+      <span class="text-sm text-gray-400">(20 reviews)</span>
+    </div>
+  </div></a>
+</div>
+
+<div class="bg-white rounded-2xl shadow-md overflow-hidden">
+  <div class="relative">
+    <a href="./booking1.html"><img src="https://discoverholidaysbd.com/wp-content/uploads/2019/06/Untitled-1.jpg" class="w-full h-48 object-cover rounded-t-2xl">
+    <span class="absolute bottom-2 left-2 text-black text-sm font-semibold px-2 py-2 rounded">₹1,01,000 per person</span>
+  </div>
+  <div class="p-4">
+    <p class="text-xs uppercase text-gray-400 tracking-widest">7 Days Tour</p>
+    <h3 class="text-lg font-medium text-gray-800 mt-1">Singapore(4N) + Bali(2N) + Malaysia(1N) Honeymoon</h3>
+    <div class="flex items-center justify-between mt-2">
+      <div class="flex space-x-1 text-rose-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+      </div>
+      <span class="text-sm text-gray-400">(20 reviews)</span>
+    </div>
+  </div></a>
+</div>
+
+</div>
+</div>
+
+<div class="bg-gray-100 py-10 px-4">
+  <h2 class="text-center text-2xl font-semibold text-gray-700 mb-8">Photo & Video Gallery</h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto">
+    <img src="https://www.indiantempletour.com/wp-content/uploads/2022/09/Mauritius-honeymoon.jpg" class="w-full h-64 object-cover rounded-lg shadow" />
+    <img src="https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/4518/Calton%20hill%20Edinburg.jpg" class="w-full h-64 object-cover rounded-lg shadow" />
+    <img src="https://images.wanderon.in/blogs/new/2024/04/gangtey.jpg" class="w-full h-64 object-cover rounded-lg shadow" />
+    <img src="https://viacation.com/wp-content/uploads/2024/10/beautiful-girl-standing-boat-looking-mountains-ratchaprapha-dam-khao-sok-national-park-surat-thani-province-thailand-scaled-1-1290x878.jpg" class="w-full h-64 object-cover rounded-lg shadow" />
+    <img src="https://image.umetravel.com/edit_upload/20200918/1600412109775221.jpg" class="w-full h-64 object-cover rounded-lg shadow" />
+    <iframe width="914" height="514" src="https://www.youtube.com/embed/a_bSBKWtFUE" title="Best Things To Do in Barcelona Spain 2025 4K" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="width: 370px;height: 256px;border-radius: 5%;"></iframe>
+  </div>
+</div>
+  <!-- Footer -->
+  <footer class="bg-black text-white py-10">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+
+      <!-- Logo and Social Icons -->
+      <div class="space-y-2" style="margin-top: -50px;margin-left: -30px;">
+        <div class=" h-40 w-70"><img src="./media/favicon.png" alt=""></div> <!-- Logo Placeholder -->
+        <div class="flex space-x-4 p-5 ml-3 w-fit ">
+          <a href="#" class="p-2 rounded-full">
+            <i class="fab fa-twitter text-black text-3xl hover:text-purple-600"></i>
+          </a>
+          <a href="#" class=" p-2 rounded-full">
+            <i class="fab fa-facebook-f text-black text-3xl hover:text-purple-600"></i>
+          </a>
+          <a href="#" class=" p-2 rounded-full">
+            <i class="fab fa-instagram text-black text-3xl hover:text-purple-600"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Information Links -->
+      <div>
+        <h3 class="text-lg font-semibold text-black mb-4">Information</h3>
+        <ul class="space-y-2 text-sm text-black">
+          <li><a href="#" class="hover:text-purple-600">Online Enquiry</a></li>
+          <li><a href="#" class="hover:text-purple-600">General Enquiry</a></li>
+          <li><a href="#" class="hover:text-purple-600">Booking</a></li>
+          <li><a href="#" class="hover:text-purple-600">Privacy</a></li>
+          <li><a href="#" class="hover:text-purple-600">Refund Policy</a></li>
+          <li><a href="#" class="hover:text-purple-600">Call Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Experience Links -->
+      <div>
+        <h3 class="text-lg font-semibold text-black mb-4">Experience</h3>
+        <ul class="space-y-2 text-sm text-black">
+          <li><a href="#" class="hover:text-purple-600">Adventure</a></li>
+          <li><a href="#" class="hover:text-purple-600">Hotel and Restaurant</a></li>
+          <li><a href="#" class="hover:text-purple-600">Beach</a></li>
+          <li><a href="#" class="hover:text-purple-600">Nature</a></li>
+          <li><a href="#" class="hover:text-purple-600">Camping</a></li>
+          <li><a href="#" class="hover:text-purple-600">Party</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div>
+        <h3 class="text-lg font-semibold text-black mb-4">Have a Questions?</h3>
+        <ul class="space-y-4 text-sm text-black">
+          <li class="flex items-start space-x-2">
+            <i class="fas fa-map-marker-alt mt-1"></i>
+            <span>203 Fake St. Mountain View, San Francisco, California, USA</span>
+          </li>
+          <li class="flex items-center space-x-2">
+            <i class="fas fa-phone"></i>
+            <span>022-6423863</span>
+          </li>
+          <li class="flex items-center space-x-2">
+            <i class="fas fa-envelope"></i>
+            <span>info@vinodhayatra.com</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+
+
+</body>
+<script>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('mobile-menu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+
+
+
+//carosel
+
+let index = 0;
+  const carousel = document.getElementById("carousel");
+  const totalSlides = carousel.children.length;
+
+  function updateCarousel() {
+    carousel.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  function nextSlide() {
+    index = (index + 1) % totalSlides;
+    updateCarousel();
+  }
+
+  function prevSlide() {
+    index = (index - 1 + totalSlides) % totalSlides;
+    updateCarousel();
+  }
+
+  // Optional: Auto-slide every 4 seconds
+  setInterval(nextSlide, 4000);
+
+</script>
+
+</html>

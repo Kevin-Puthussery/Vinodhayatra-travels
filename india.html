@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinodhayatra :: India Tour</title>
+  <!--Tailwind Css CDN-->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!--Favicons-->
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4287/4287725.png"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--Google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Play:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech&family=Space+Grotesk:wght@300..700&family=Tagesschrift&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@700&display=swap" rel="stylesheet">
+  <!--Stylesheet-->
+  <link rel="stylesheet" href="./style.css">
+  <!--Favicon-->
+  <link rel="icon" href="./media/favicon.png">
+  <!--Fontawesome CDN-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+      font-family: 'Alegreya', serif;
+  font-weight: 700;
+      background-color: #FDF6E3;
+      font-style: normal;
+    }
+  </style>
+</head>
+
+<body>
+
+ <!--navbar-->
+  <nav class="">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div class="flex justify-between items-center h-16 relative">
+
+        <!-- Logo (left) -->
+        <div class="flex items-center" style="width: 180px;">
+          <a href="#" class=""><img src="./media/favicon.png" alt=""></a>
+        </div>
+
+        <!-- Centered Nav Links -->
+        <div class="hidden md:flex space-x-8 items-center absolute left-1/2 transform -translate-x-1/2">
+          <a href="./index.html" class="text-black-700 hover:text-purple-600 text-2xl">HOME</a>
+          <a href="./destination.html" class="text-black-700 hover:text-purple-600 text-2xl">HOLIDAYS</a>
+          <a href="./stays.html" class="text-black-700 hover:text-purple-600 text-2xl">STAYS</a>
+          <a href="./services.html" class="text-black-700 hover:text-purple-600 text-2xl">SERVICES</a>
+          <a href="./bookings.html" class="text-black-700 hover:text-purple-600 text-2xl">BOOKINGS</a>
+        </div>
+
+        <!-- Mobile menu button -->
+        <div class="md:hidden flex items-center">
+          <button id="menu-btn" class="text-black focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pt-13 pb-4 space-y-1">
+      <a href="./index.html" class="block text-gray-700 hover:text-indigo-600 text-xl">HOME</a>
+      <a href="./destination.html" class="block text-gray-700 hover:text-indigo-600 text-xl">HOLIDAYS</a>
+      <a href="./stays.html" class="block text-gray-700 hover:text-indigo-600 text-xl">STAYS</a>
+      <a href="./services.html" class="block text-gray-700 hover:text-indigo-600 text-xl">SERVICES</a>
+      <a href="./bookings.html" class="block text-gray-700 hover:text-indigo-600 text-xl">BOOKINGS</a>
+    </div>
+  </nav>
+
+<!--banner-->
+
+<div
+    class="opacity-80 w-full h-64 md:h-90 bg-[url('https://46whcnewdelhi2024.nic.in/img/asi-img/carousel-3.jpg')] bg-cover bg-center">
+  </div>
+
+
+
+
+  <!-- Tour packages -->
+   <div class="">
+   <h3 class="text-3xl text-center pt-5 py-2">Most Visited Destinations !!!</h3>
+ <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4 bg-gray-100">
+
+
+<div class="bg-white rounded-2xl shadow-md overflow-hidden">
+      <div class="relative">
+    <a href="./booking1.html"><img src="https://www.holidaymonk.com/wp-content/uploads/2022/03/Rajasthan.jpg" alt="Gurtnellen, Switzerland" class="w-full h-48 object-cover rounded-t-2xl">
+    <span class="absolute bottom-2 left-2 text-black text-sm font-semibold px-2 py-2 rounded">₹50,000 per pax</span>
+  </div>
+  <div class="p-4">
+    <p class="text-xs uppercase text-gray-400 tracking-widest">15 Days Tour</p>
+    <h3 class="text-lg font-medium text-gray-800 mt-1">Elegant Jaipur</h3>
+    <div class="flex items-center justify-between mt-2">
+      <div class="flex space-x-1 text-rose-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+      </div>
+      <span class="text-sm text-gray-400">(120 reviews)</span>
+    </div>
+  </div></a>
+</div>
+
+<div class="bg-white rounded-2xl shadow-md overflow-hidden">
+  <div class="relative">
+    <a href="./booking1.html"><img src="https://dreamlandmunnar.in/wp-content/uploads/2023/11/5-1024x620.webp" alt="Gurtnellen, Switzerland" class="w-full h-48 object-cover rounded-t-2xl">
+    <span class="absolute bottom-2 left-2 text-black text-sm font-semibold px-2 py-2 rounded">₹20,000 per pax</span>
+  </div>
+  <div class="p-4">
+    <p class="text-xs uppercase text-gray-400 tracking-widest">3 Days Tour</p>
+    <h3 class="text-lg font-medium text-gray-800 mt-1">Munnar Beauty</h3>
+    <div class="flex items-center justify-between mt-2">
+      <div class="flex space-x-1 text-rose-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+      </div>
+      <span class="text-sm text-gray-400">(100 reviews)</span>
+    </div>
+  </div></a>
+</div>
+
+<div class="bg-white rounded-2xl shadow-md overflow-hidden">
+  <div class="relative">
+    <a href="./booking1.html"><img src="https://www.ekeralatourism.net/wp-content/uploads/2018/03/Alleppey.jpg" alt="Gurtnellen, Switzerland" class="w-full h-48 object-cover rounded-t-2xl">
+    <span class="absolute bottom-2 left-2 text-black text-sm font-semibold px-2 py-2 rounded">₹25,000 per pax</span>
+  </div>
+  <div class="p-4">
+    <p class="text-xs uppercase text-gray-400 tracking-widest">4 Days Tour</p>
+    <h3 class="text-lg font-medium text-gray-800 mt-1">Serene Alleppey</h3>
+    <div class="flex items-center justify-between mt-2">
+      <div class="flex space-x-1 text-rose-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+      </div>
+      <span class="text-sm text-gray-400">(30 reviews)</span>
+    </div>
+  </div></a>
+</div>
+
+<div class="bg-white rounded-2xl shadow-md overflow-hidden">
+  <div class="relative">
+    <a href="./booking1.html"><img src="https://www.fabhotels.com/blog/wp-content/uploads/2019/04/Places-to-Visit-in-Coorg_600x400.jpg" alt="Gurtnellen, Switzerland" class="w-full h-48 object-cover rounded-t-2xl">
+    <span class="absolute bottom-2 left-2 text-black text-sm font-semibold px-2 py-2 rounded">₹20,000 per pax</span>
+  </div>
+  <div class="p-4">
+    <p class="text-xs uppercase text-gray-400 tracking-widest">3 Days Tour</p>
+    <h3 class="text-lg font-medium text-gray-800 mt-1">Enchanting Coorg</h3>
+    <div class="flex items-center justify-between mt-2">
+      <div class="flex space-x-1 text-rose-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+      </div>
+      <span class="text-sm text-gray-400">(20 reviews)</span>
+    </div>
+  </div></a>
+</div>
+
+<div class="bg-white rounded-2xl shadow-md overflow-hidden">
+      <div class="relative">
+    <a href="./booking1.html"><img src="https://media.istockphoto.com/id/1212378964/photo/tourist-in-agra-india.jpg?s=612x612&w=0&k=20&c=UfGF42X7C4CRmqTJ7e593ffhz0SexeZHm7ZmETJFePI=" alt="Gurtnellen, Switzerland" class="w-full h-48 object-cover rounded-t-2xl">
+    <span class="absolute bottom-2 left-2 text-black text-sm font-semibold px-2 py-2 rounded">₹50,000 per pax</span>
+  </div>
+  <div class="p-4">
+    <p class="text-xs uppercase text-gray-400 tracking-widest">5 Days Tour</p>
+    <h3 class="text-lg font-medium text-gray-800 mt-1">Historical Delhi & Agra</h3>
+    <div class="flex items-center justify-between mt-2">
+      <div class="flex space-x-1 text-rose-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+      </div>
+      <span class="text-sm text-gray-400">(120 reviews)</span>
+    </div>
+  </div></a>
+</div>
+
+<div class="bg-white rounded-2xl shadow-md overflow-hidden">
+  <div class="relative">
+    <a href="./booking1.html"><img src="https://plus.unsplash.com/premium_photo-1697729588019-20a1f5a325d1?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZWxsb3JhJTIwY2F2ZXN8ZW58MHx8MHx8fDA%3D" class="w-full h-48 object-cover rounded-t-2xl">
+    <span class="absolute bottom-2 left-2 text-black text-sm font-semibold px-2 py-2 rounded">₹20,000 per pax</span>
+  </div>
+  <div class="p-4">
+    <p class="text-xs uppercase text-gray-400 tracking-widest">3 Days Tour</p>
+    <h3 class="text-lg font-medium text-gray-800 mt-1">Heritages of Aurangabad</h3>
+    <div class="flex items-center justify-between mt-2">
+      <div class="flex space-x-1 text-rose-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+      </div>
+      <span class="text-sm text-gray-400">(100 reviews)</span>
+    </div>
+  </div></a>
+</div>
+
+<div class="bg-white rounded-2xl shadow-md overflow-hidden">
+  <div class="relative">
+    <a href="./booking1.html"><img src="https://media.istockphoto.com/id/539018660/photo/taj-mahal-hotel-and-gateway-of-india.jpg?s=612x612&w=0&k=20&c=L1LJVrYMS8kj2rJKlQMcUR88vYoAZeWbYIGkcTo6QV0=" alt="Gurtnellen, Switzerland" class="w-full h-48 object-cover rounded-t-2xl">
+    <span class="absolute bottom-2 left-2 text-black text-sm font-semibold px-2 py-2 rounded">₹25,000 per pax</span>
+  </div>
+  <div class="p-4">
+    <p class="text-xs uppercase text-gray-400 tracking-widest">3 Days Tour</p>
+    <h3 class="text-lg font-medium text-gray-800 mt-1">City of Dreams</h3>
+    <div class="flex items-center justify-between mt-2">
+      <div class="flex space-x-1 text-rose-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+      </div>
+      <span class="text-sm text-gray-400">(30 reviews)</span>
+    </div>
+  </div></a>
+</div>
+
+<div class="bg-white rounded-2xl shadow-md overflow-hidden">
+  <div class="relative">
+    <a href="./booking1.html"><img src="https://media.istockphoto.com/id/1270774245/photo/hampi-stone-chariot-the-antique-stone-art-piece-from-unique-angle-with-amazing-blue-sk.jpg?s=612x612&w=0&k=20&c=LugJgTiUd9y_8MO2KDQ2I4IvOD_7BH5x_R8iRApqEUg=" alt="Gurtnellen, Switzerland" class="w-full h-48 object-cover rounded-t-2xl">
+    <span class="absolute bottom-2 left-2 text-black text-sm font-semibold px-2 py-2 rounded">₹20,000 per pax</span>
+  </div>
+  <div class="p-4">
+    <p class="text-xs uppercase text-gray-400 tracking-widest">3 Days Tour</p>
+    <h3 class="text-lg font-medium text-gray-800 mt-1">Wonders of Hampi</h3>
+    <div class="flex items-center justify-between mt-2">
+      <div class="flex space-x-1 text-rose-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+      </div>
+      <span class="text-sm text-gray-400">(20 reviews)</span>
+    </div>
+  </div></a>
+</div>
+
+
+
+</div>
+</div>
+
+
+<div class="relative overflow-hidden w-full h-74">
+<div id="carousel" class="flex transition-transform duration-500 ease-in-out">
+
+<div class="min-w-full h-94 bg-blue-500 flex items-center justify-center text-white text-2xl">
+  <div
+    class="opacity-70 w-full h-30 md:h-96 bg-[url('https://www.thomascook.in/images/india-around/2025/feb/Honeymoon-special-WB.jpg')] bg-cover bg-center">
+  </div>
+</div>
+<div class="min-w-full h-94 bg-blue-500 flex items-center justify-center text-white text-2xl">
+  <div
+    class="opacity-70 w-full h-64 md:h-96 bg-[url('https://www.sotc.in/images/Emailers/2020/feb/honeymoon-page-banner/Goa-Honeymoon-Banner-1-1920x500.jpg')] bg-cover bg-center">
+  </div>
+</div>
+<div class="min-w-full h-94 bg-blue-500 flex items-center justify-center text-white text-2xl">
+  <div
+    class="opacity-90 w-full h-64 md:h-96 bg-[url('https://www.sotc.in/images/Emailers/2020/feb/honeymoon-page-banner/Manali-Honeymoon-Banner-11-1920x500.jpg')] bg-cover bg-center">
+  </div>
+</div>
+
+  </div>
+  </div> 
+
+
+
+<div class="">
+   <h3 class="text-3xl text-center pt-4 py-2">Romantic getaways Holiday Packages !!!</h3>
+ <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4 bg-gray-100">
+
+
+<div class="bg-white rounded-2xl shadow-md overflow-hidden">
+      <div class="relative">
+    <a href="./booking1.html"><img src="https://www.andamanmakememories.com/admin/include/upload/packages/64f5bf756e789HONEYMOOON%202.jpg" alt="Gurtnellen, Switzerland" class="w-full h-48 object-cover rounded-t-2xl">
+    <span class="absolute bottom-2 left-2 text-black text-sm font-semibold px-2 py-2 rounded">₹50,000 per pax</span>
+  </div>
+  <div class="p-4">
+    <p class="text-xs uppercase text-gray-400 tracking-widest">8 Days Tour</p>
+    <h3 class="text-lg font-medium text-gray-800 mt-1">Romantic Andaman</h3>
+    <div class="flex items-center justify-between mt-2">
+      <div class="flex space-x-1 text-rose-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+      </div>
+      <span class="text-sm text-gray-400">(120 reviews)</span>
+    </div>
+  </div></a>
+</div>
+
+<div class="bg-white rounded-2xl shadow-md overflow-hidden">
+  <div class="relative">
+    <a href="./booking1.html"><img src="https://www.seasonzindia.com/images/destinationSliders/20200311060151_1583906511.jpg" class="w-full h-48 object-cover rounded-t-2xl">
+    <span class="absolute bottom-2 left-2 text-black text-sm font-semibold px-2 py-2 rounded">₹20,000 per pax</span>
+  </div>
+  <div class="p-4">
+    <p class="text-xs uppercase text-gray-400 tracking-widest">5 Days Tour</p>
+    <h3 class="text-lg font-medium text-gray-800 mt-1">God's Own Kerala</h3>
+    <div class="flex items-center justify-between mt-2">
+      <div class="flex space-x-1 text-rose-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+      </div>
+      <span class="text-sm text-gray-400">(100 reviews)</span>
+    </div>
+  </div></a>
+</div>
+
+<div class="bg-white rounded-2xl shadow-md overflow-hidden">
+  <div class="relative">
+    <a href="./booking1.html"><img src="https://goldenwheels.in/wp-content/uploads/2025/01/Honeymoon_Trip_in_Kashmir_golden_wheels.jpg" alt="Gurtnellen, Switzerland" class="w-full h-48 object-cover rounded-t-2xl">
+    <span class="absolute bottom-2 left-2 text-black text-sm font-semibold px-2 py-2 rounded">₹25,000 per pax</span>
+  </div>
+  <div class="p-4">
+    <p class="text-xs uppercase text-gray-400 tracking-widest">6 Days Tour</p>
+    <h3 class="text-lg font-medium text-gray-800 mt-1">Chilling @ Kashmir</h3>
+    <div class="flex items-center justify-between mt-2">
+      <div class="flex space-x-1 text-rose-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+      </div>
+      <span class="text-sm text-gray-400">(30 reviews)</span>
+    </div>
+  </div></a>
+</div>
+
+<div class="bg-white rounded-2xl shadow-md overflow-hidden">
+  <div class="relative">
+    <a href="./booking1.html"><img src="https://cdn1.tripoto.com/media/filter/nxxl/img/1429685/Image/1583755323_ooty.jpg.webp" alt="Gurtnellen, Switzerland" class="w-full h-48 object-cover rounded-t-2xl">
+    <span class="absolute bottom-2 left-2 text-black text-sm font-semibold px-2 py-2 rounded">₹20,000 per pax</span>
+  </div>
+  <div class="p-4">
+    <p class="text-xs uppercase text-gray-400 tracking-widest">3 Days Tour</p>
+    <h3 class="text-lg font-medium text-gray-800 mt-1">Prince & Princess Hills</h3>
+    <div class="flex items-center justify-between mt-2">
+      <div class="flex space-x-1 text-rose-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+      </div>
+      <span class="text-sm text-gray-400">(20 reviews)</span>
+    </div>
+  </div></a>
+</div>
+
+<div class="bg-white rounded-2xl shadow-md overflow-hidden">
+  <div class="relative">
+     <a href="./booking1.html"><img src="https://images.wanderon.in/blogs/new/2024/09/best-honeymoon-resorts-in-andaman.jpeg" alt="Gurtnellen, Switzerland" class="w-full h-48 object-cover rounded-t-2xl">
+    <span class="absolute bottom-2 left-2 text-black text-sm font-semibold px-2 py-2 rounded">₹20,000 per pax</span>
+  </div>
+  <div class="p-4">
+    <p class="text-xs uppercase text-gray-400 tracking-widest">3 Days Tour</p>
+    <h3 class="text-lg font-medium text-gray-800 mt-1">Sunny Goa</h3>
+    <div class="flex items-center justify-between mt-2">
+      <div class="flex space-x-1 text-rose-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+      </div>
+      <span class="text-sm text-gray-400">(20 reviews)</span>
+    </div>
+  </div></a>
+</div>
+
+<div class="bg-white rounded-2xl shadow-md overflow-hidden">
+  <div class="relative">
+    <a href="./booking1.html"><img src="https://ik.imagekit.io/yd29mwkn4/images/uploads/packages/large/8086.jpg" class="w-full h-48 object-cover rounded-t-2xl">
+    <span class="absolute bottom-2 left-2 text-black text-sm font-semibold px-2 py-2 rounded">₹25,000 per pax</span>
+  </div>
+  <div class="p-4">
+    <p class="text-xs uppercase text-gray-400 tracking-widest">2 Days Tour</p>
+    <h3 class="text-lg font-medium text-gray-800 mt-1">Soulful Himachal</h3>
+    <div class="flex items-center justify-between mt-2">
+      <div class="flex space-x-1 text-rose-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+      </div>
+      <span class="text-sm text-gray-400">(20 reviews)</span>
+    </div>
+  </div></a>
+</div>
+
+<div class="bg-white rounded-2xl shadow-md overflow-hidden">
+  <div class="relative">
+    <a href="./booking1.html"><img src="https://ihplb.b-cdn.net/wp-content/uploads/2018/11/agra-honeymoon.jpg" class="w-full h-48 object-cover rounded-t-2xl">
+    <span class="absolute bottom-2 left-2 text-black text-sm font-semibold px-2 py-2 rounded">₹23,000 per pax</span>
+  </div>
+  <div class="p-4">
+    <p class="text-xs uppercase text-gray-400 tracking-widest">2 Days Tour</p>
+    <h3 class="text-lg font-medium text-gray-800 mt-1">Scenic Delhi+Agra</h3>
+    <div class="flex items-center justify-between mt-2">
+      <div class="flex space-x-1 text-rose-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+      </div>
+      <span class="text-sm text-gray-400">(20 reviews)</span>
+    </div>
+  </div></a>
+</div>
+
+<div class="bg-white rounded-2xl shadow-md overflow-hidden">
+  <div class="relative">
+    <a href="./booking1.html"><img src="https://www.holidify.com/images/cmsuploads/compressed/People-Love-Couple-Man-Girl-Outdoors-Nature-1869666_20210901115415.jpg" class="w-full h-48 object-cover rounded-t-2xl">
+    <span class="absolute bottom-2 left-2 text-black text-sm font-semibold px-2 py-2 rounded">₹21,000 per pax</span>
+  </div>
+  <div class="p-4">
+    <p class="text-xs uppercase text-gray-400 tracking-widest">2 Days Tour</p>
+    <h3 class="text-lg font-medium text-gray-800 mt-1">Lush Coorg Brek</h3>
+    <div class="flex items-center justify-between mt-2">
+      <div class="flex space-x-1 text-rose-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.175L12 18.896l-7.334 3.87 1.4-8.175L.132 9.21l8.2-1.192z"/></svg>
+      </div>
+      <span class="text-sm text-gray-400">(20 reviews)</span>
+    </div>
+  </div></a>
+</div>
+
+</div>
+</div>
+
+<div class="bg-gray-100 py-10 px-4">
+  <h2 class="text-center text-2xl font-semibold text-gray-700 mb-8">Photo & Video Gallery</h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto">
+    <img src="https://www.thomascook.in/images/site-banners/honeymoon-packages-india-kerala.jpg" alt="Gallery image" class="w-full h-64 object-cover rounded-lg shadow" />
+    <img src="https://www.thomascook.in/images/site-banners/honeymoon-packages-india-himachal.jpg" alt="Gallery image" class="w-full h-64 object-cover rounded-lg shadow" />
+    <img src="https://www.thomascook.in/images/site-banners/honeymoon-packages-india-bhutan.jpg" alt="Gallery image" class="w-full h-64 object-cover rounded-lg shadow" />
+    <img src="https://www.thomascook.in/images/site-banners/honeymoon-packages-india-andamans.jpg" alt="Gallery image" class="w-full h-64 object-cover rounded-lg shadow" />
+    <img src="https://www.thomascook.in/images/site-banners/south_goa.jpg" alt="Gallery image" class="w-full h-64 object-cover rounded-lg shadow" />
+    <iframe width="914" height="514" src="https://www.youtube.com/embed/ChchmDc_OhI" title="The Ruins of Hampi, Karnataka, India  [Amazing Places 4K]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="width: 370px;height: 256px;border-radius: 5%;"></iframe>
+  </div>
+</div>
+  <!-- Footer -->
+  <footer class="bg-black text-white py-10">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+
+      <!-- Logo and Social Icons -->
+      <div class="space-y-2" style="margin-top: -50px;margin-left: -30px;">
+        <div class=" h-40 w-70"><img src="./media/favicon.png" alt=""></div> <!-- Logo Placeholder -->
+        <div class="flex space-x-4 p-5 ml-3 w-fit ">
+          <a href="#" class="p-2 rounded-full">
+            <i class="fab fa-twitter text-black text-3xl hover:text-purple-600"></i>
+          </a>
+          <a href="#" class=" p-2 rounded-full">
+            <i class="fab fa-facebook-f text-black text-3xl hover:text-purple-600"></i>
+          </a>
+          <a href="#" class=" p-2 rounded-full">
+            <i class="fab fa-instagram text-black text-3xl hover:text-purple-600"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Information Links -->
+      <div>
+        <h3 class="text-lg font-semibold text-black mb-4">Information</h3>
+        <ul class="space-y-2 text-sm text-black">
+          <li><a href="#" class="hover:text-purple-600">Online Enquiry</a></li>
+          <li><a href="#" class="hover:text-purple-600">General Enquiry</a></li>
+          <li><a href="#" class="hover:text-purple-600">Booking</a></li>
+          <li><a href="#" class="hover:text-purple-600">Privacy</a></li>
+          <li><a href="#" class="hover:text-purple-600">Refund Policy</a></li>
+          <li><a href="#" class="hover:text-purple-600">Call Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Experience Links -->
+      <div>
+        <h3 class="text-lg font-semibold text-black mb-4">Experience</h3>
+        <ul class="space-y-2 text-sm text-black">
+          <li><a href="#" class="hover:text-purple-600">Adventure</a></li>
+          <li><a href="#" class="hover:text-purple-600">Hotel and Restaurant</a></li>
+          <li><a href="#" class="hover:text-purple-600">Beach</a></li>
+          <li><a href="#" class="hover:text-purple-600">Nature</a></li>
+          <li><a href="#" class="hover:text-purple-600">Camping</a></li>
+          <li><a href="#" class="hover:text-purple-600">Party</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div>
+        <h3 class="text-lg font-semibold text-black mb-4">Have a Questions?</h3>
+        <ul class="space-y-4 text-sm text-black">
+          <li class="flex items-start space-x-2">
+            <i class="fas fa-map-marker-alt mt-1"></i>
+            <span>203 Fake St. Mountain View, San Francisco, California, USA</span>
+          </li>
+          <li class="flex items-center space-x-2">
+            <i class="fas fa-phone"></i>
+            <span>022-6423863</span>
+          </li>
+          <li class="flex items-center space-x-2">
+            <i class="fas fa-envelope"></i>
+            <span>info@vinodhayatra.com</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+
+
+</body>
+<script>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('mobile-menu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+
+
+
+//carosel
+
+let index = 0;
+  const carousel = document.getElementById("carousel");
+  const totalSlides = carousel.children.length;
+
+  function updateCarousel() {
+    carousel.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  function nextSlide() {
+    index = (index + 1) % totalSlides;
+    updateCarousel();
+  }
+
+  function prevSlide() {
+    index = (index - 1 + totalSlides) % totalSlides;
+    updateCarousel();
+  }
+
+  // Optional: Auto-slide every 4 seconds
+  setInterval(nextSlide, 4000);
+
+</script>
+
+</html>

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vinodhayatra :: India Tour</title>
+    <!--Tailwind Css CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!--Favicons-->
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4287/4287725.png"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Play:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech&family=Space+Grotesk:wght@300..700&family=Tagesschrift&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@700&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="./style.css">
+    <!--Favicon-->
+    <link rel="icon" href="./media/favicon.png">
+    <!--Fontawesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            font-family: 'Alegreya', serif;
+            font-weight: 700;
+            background-color: #FDF6E3;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!--navbar-->
+    <nav class="">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="flex justify-between items-center h-16 relative">
+
+                <!-- Logo (left) -->
+                <div class="flex items-center" style="width: 180px;">
+                    <a href="#" class=""><img src="./media/favicon.png" alt=""></a>
+                </div>
+
+                <!-- Centered Nav Links -->
+                <div class="hidden md:flex space-x-8 items-center absolute left-1/2 transform -translate-x-1/2">
+                    <a href="./index.html" class="text-black-700 hover:text-purple-600 text-2xl">HOME</a>
+                    <a href="./holidays.html" class="text-black-700 hover:text-purple-600 text-2xl">HOLIDAYS</a>
+                    <a href="stays.html" class="text-black-700 hover:text-purple-600 text-2xl">STAYS</a>
+                    <a href="services.html" class="text-black-700 hover:text-purple-600 text-2xl">SERVICES</a>
+                    <a href="bookings.html" class="text-black-700 hover:text-purple-600 text-2xl">BOOKINGS</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-black focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden px-4 pt-13 pb-4 space-y-1">
+            <a href="./index.html" class="block text-gray-700 hover:text-indigo-600 text-xl">HOME</a>
+            <a href="" class="block text-gray-700 hover:text-indigo-600 text-xl">HOLIDAYS</a>
+            <a href="#" class="block text-gray-700 hover:text-indigo-600 text-xl">STAYS</a>
+            <a href="#" class="block text-gray-700 hover:text-indigo-600 text-xl">SERVICES</a>
+            <a href="#" class="block text-gray-700 hover:text-indigo-600 text-xl">BOOKINGS</a>
+        </div>
+    </nav>
+
+
+
+    <!-- Carousel -->
+
+    <div class="relative overflow-hidden w-full h-94">
+        <div id="carousel" class="flex transition-transform duration-500 ease-in-out">
+
+            <div class="min-w-full h-94 bg-blue-500 flex items-center justify-center text-white text-2xl">
+                <div
+                    class="opacity-70 w-full h-64 md:h-96 bg-[url('https://images.pexels.com/photos/164589/pexels-photo-164589.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-cover bg-center">
+                </div>
+            </div>
+            <div class="min-w-full h-94 bg-blue-500 flex items-center justify-center text-white text-2xl">
+                <div
+                    class="opacity-70 w-full h-64 md:h-96 bg-[url('https://images.unsplash.com/photo-1515165562839-978bbcf18277?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center">
+                </div>
+            </div>
+            <div class="min-w-full h-94 bg-blue-500 flex items-center justify-center text-white text-2xl">
+                <div
+                    class="opacity-90 w-full h-64 md:h-96 bg-[url('https://images.unsplash.com/photo-1590951360207-317cb18098b3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center">
+                </div>
+            </div>
+            <div class="min-w-full h-94 bg-blue-500 flex items-center justify-center text-white text-2xl">
+                <div
+                    class="opacity-90 w-full h-64 md:h-96 bg-[url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 py-10 space-y-16">
+
+        <!-- FLIGHT -->
+        <section>
+            <div class="bg-white rounded-xl shadow p-6">
+                <h2 class="text-2xl font-bold mb-4 text-blue-600">Book a Flight</h2>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                    <input type="text" placeholder="Leaving from" class="w-full border rounded px-3 py-2" />
+                    <input type="text" placeholder="Going to" class="w-full border rounded px-3 py-2" />
+                    <input type="date" class="w-full border rounded px-3 py-2" />
+                    <select class="w-full border rounded px-3 py-2">
+                        <option disabled selected>1 traveller, Economy</option>
+                        <option>Economy Class</option>
+                        <option>Business Class</option>
+                        <option>First Class</option>
+                    </select>
+                </div>
+
+                <div class="text-right mt-4">
+                    <button class="bg-blue-600 text-black px-6 py-2 rounded-full hover:bg-blue-700">Search
+                        Flights</button>
+                </div>
+            </div>
+
+            <h3 class="text-xl font-semibold mt-8 mb-4">Flight Deals under ₹7,000</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-white rounded-xl shadow p-4">
+                    <img src="https://thesalemnew.news.blog/wp-content/uploads/2022/04/images-11.jpeg?w=678"
+                        class="w-full h-48 rounded-xl mb-4" />
+                    <h4 class="font-semibold text-lg">Salem</h4>
+                    <p class="text-sm text-gray-500">1h 10m, direct<br>Sun 6/7 → Sun 13/7</p>
+                    <p class="mt-2 font-bold">from ₹2,399</p>
+                </div>
+                <div class="bg-white rounded-xl shadow p-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA9gxinKnIvMzjJaFKgtG9mxOTVRqFIsr7Tw&s"
+                        class="w-full h-48 rounded-xl mb-4" />
+                    <h4 class="font-semibold text-lg">Bengaluru</h4>
+                    <p class="text-sm text-gray-500">1h 15m, direct<br>Tue 1/7 → Sat 5/7</p>
+                    <p class="mt-2 font-bold">from ₹4,369</p>
+                </div>
+                <div class="bg-white rounded-xl shadow p-4">
+                    <img src="https://www.ekeralatourism.net/wp-content/uploads/2018/12/kunnar.jpg"
+                        class="w-full h-48 rounded-xl mb-4" />
+                    <h4 class="font-semibold text-lg">Kannur</h4>
+                    <p class="text-sm text-gray-500">1h 5m, direct<br>Thu 24/7 → Thu 31/7</p>
+                    <p class="mt-2 font-bold">from ₹4,883</p>
+                </div>
+                <div class="bg-white rounded-xl shadow p-4">
+                    <img src="https://swarajya.gumlet.io/swarajya%2F2023-07%2Fd96a756a-e16c-491c-80d5-fa948c045a0f%2F1500x500.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100"
+                        class="w-full h-48 rounded-xl mb-4" />
+                    <h4 class="font-semibold text-lg">Chennai</h4>
+                    <p class="text-sm text-gray-500">1h 20m, direct<br>Tue 8/7 → Tue 15/7</p>
+                    <p class="mt-2 font-bold">from ₹5,569</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- TRAIN -->
+        <section>
+            <div class="bg-white rounded-xl shadow p-6">
+                <h2 class="text-2xl font-bold mb-4 text-green-600">Book a Train</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <input type="text" placeholder="From Station" class="w-full border rounded px-3 py-2" />
+                    <input type="text" placeholder="To Station" class="w-full border rounded px-3 py-2" />
+                    <input type="date" class="w-full border rounded px-3 py-2" />
+                </div>
+                <div class="text-right mt-4">
+                    <button class="bg-green-600 text-black px-6 py-2 rounded-full hover:bg-green-700">Search
+                        Trains</button>
+                </div>
+            </div>
+
+            <h3 class="text-xl font-semibold mt-8 mb-4">Train Deals</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-white rounded-xl shadow p-4">
+                    <img src="https://www.constructionworld.in/assets/uploads/10509ce3de0d41a6ad19d12d697daf169e9c8.webp"
+                        class="w-full h-48 rounded-xl mb-4" />
+                    <h4 class="font-semibold text-lg">Delhi</h4>
+                    <p class="text-sm text-gray-500">12h, sleeper<br>Mon 1/7 → Tue 2/7</p>
+                    <p class="mt-2 font-bold">from ₹620</p>
+                </div>
+                <div class="bg-white rounded-xl shadow p-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Chhatrapati_shivaji_terminus%2C_esterno_01.jpg/1200px-Chhatrapati_shivaji_terminus%2C_esterno_01.jpg"
+                        class="w-full h-48 rounded-xl mb-4" />
+                    <h4 class="font-semibold text-lg">Mumbai</h4>
+                    <p class="text-sm text-gray-500">14h, AC<br>Wed 3/7 → Thu 4/7</p>
+                    <p class="mt-2 font-bold">from ₹740</p>
+                </div>
+                <div class="bg-white rounded-xl shadow p-4">
+                    <img src="https://resize.indiatvnews.com/en/resize/gallery/715_-/2025/01/howrah-junction-1737439702.jpg"
+                        class="w-full h-48 rounded-xl mb-4" />
+                    <h4 class="font-semibold text-lg">Kolkata</h4>
+                    <p class="text-sm text-gray-500">10h, express<br>Fri 5/7 → Sat 6/7</p>
+                    <p class="mt-2 font-bold">from ₹560</p>
+                </div>
+                <div class="bg-white rounded-xl shadow p-4">
+                    <img src="https://st.indiarailinfo.com/kjfdsuiemjvcya24/0/4/9/0/4602490/0/img202003261153043787135.jpg"
+                        class="w-full h-48 rounded-xl mb-4" />
+                    <h4 class="font-semibold text-lg">Hyderabad</h4>
+                    <p class="text-sm text-gray-500">8h, express<br>Sun 7/7 → Mon 8/7</p>
+                    <p class="mt-2 font-bold">from ₹480</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- BUS -->
+        <section>
+            <div class="bg-white rounded-xl shadow p-6">
+                <h2 class="text-2xl font-bold mb-4 text-red-600">Book a Bus</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <input type="text" placeholder="From City" class="w-full border rounded px-3 py-2" />
+                    <input type="text" placeholder="To City" class="w-full border rounded px-3 py-2" />
+                    <input type="date" class="w-full border rounded px-3 py-2" />
+                </div>
+                <div class="text-right mt-4">
+                    <button class="bg-red-600 text-black px-6 py-2 rounded-full hover:bg-red-700">Search Buses</button>
+                </div>
+            </div>
+
+            <h3 class="text-xl font-semibold mt-8 mb-4">Bus Deals</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-white rounded-xl shadow p-4">
+                    <img src="https://www.team-bhp.com/sites/default/files/styles/amp_high_res/public/IMG_20230225_224420.jpg"
+                        class="w-full h-48 rounded-xl mb-4" />
+                    <h4 class="font-semibold text-lg">Kochi</h4>
+                    <p class="text-sm text-gray-500">7h overnight<br>Mon 6/7</p>
+                    <p class="mt-2 font-bold">from ₹399</p>
+                </div>
+                <div class="bg-white rounded-xl shadow p-4">
+                    <img src="https://live.staticflickr.com/5743/30600111625_c34600eb82_b.jpg"
+                        class="w-full h-48 rounded-xl mb-4" />
+                    <h4 class="font-semibold text-lg">Mysuru</h4>
+                    <p class="text-sm text-gray-500">5h 30m<br>Tue 7/7</p>
+                    <p class="mt-2 font-bold">from ₹459</p>
+                </div>
+                <div class="bg-white rounded-xl shadow p-4">
+                    <img src="https://i0.wp.com/tnstcblog.com/wp-content/uploads/2024/09/187a87e0-5336-4913-924c-9671a33421bf-1_all_103286494762565274302770.jpg?resize=1024%2C510&ssl=1"
+                        class="w-full h-48 rounded-xl mb-4" />
+                    <h4 class="font-semibold text-lg">Trichy</h4>
+                    <p class="text-sm text-gray-500">6h 10m<br>Wed 8/7</p>
+                    <p class="mt-2 font-bold">from ₹429</p>
+                </div>
+                <div class="bg-white rounded-xl shadow p-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1QUUYRThEtAsBZ0x42VltUgchyFTR97BGxw&s"
+                        class="w-full h-48 rounded-xl mb-4" />
+                    <h4 class="font-semibold text-lg">Madurai</h4>
+                    <p class="text-sm text-gray-500">8h 15m<br>Thu 9/7</p>
+                    <p class="mt-2 font-bold">from ₹499</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CAR RENTAL -->
+        <section>
+            <div class="bg-white rounded-xl shadow p-6">
+                <h2 class="text-2xl font-bold mb-4 text-yellow-600">Book a Car Rental</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <input type="text" placeholder="Pickup Location" class="w-full border rounded px-3 py-2" />
+                    <input type="date" class="w-full border rounded px-3 py-2" />
+                    <input type="time" class="w-full border rounded px-3 py-2" />
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                    <input type="text" placeholder="Drop-off Location" class="w-full border rounded px-3 py-2" />
+                    <input type="date" class="w-full border rounded px-3 py-2" />
+                    <input type="time" class="w-full border rounded px-3 py-2" />
+                </div>
+                <div class="text-right mt-4">
+                    <button class="bg-yellow-500 text-black px-6 py-2 rounded-full hover:bg-yellow-600">Search
+                        Cars</button>
+                </div>
+            </div>
+
+            <h3 class="text-xl font-semibold mt-8 mb-4">Car Rental Deals</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-white rounded-xl shadow p-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHImX1iwoX-R5Y1xJ5sTdDlNJoJyS3IY1OuQ&s"
+                        class="w-full h-48 rounded-xl mb-4" />
+                    <h4 class="font-semibold text-lg">Delhi</h4>
+                    <p class="text-sm text-gray-500">Pickup 6 Jul - Drop 8 Jul</p>
+                    <p class="mt-2 font-bold">from ₹999/day</p>
+                </div>
+                <div class="bg-white rounded-xl shadow p-4">
+                    <img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2VkYW58ZW58MHx8MHx8fDA%3D"
+                        class="w-full h-48 rounded-xl mb-4" />
+                    <h4 class="font-semibold text-lg">Pune</h4>
+                    <p class="text-sm text-gray-500">Pickup 9 Jul - Drop 11 Jul</p>
+                    <p class="mt-2 font-bold">from ₹899/day</p>
+                </div>
+                <div class="bg-white rounded-xl shadow p-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHkHyjOWOMtKLnX9jqJQm_DYCQdWmxAPjvgg&s"
+                        class="w-full h-48 rounded-xl mb-4" />
+                    <h4 class="font-semibold text-lg">Bangalore</h4>
+                    <p class="text-sm text-gray-500">Pickup 12 Jul - Drop 14 Jul</p>
+                    <p class="mt-2 font-bold">from ₹1,099/day</p>
+                </div>
+                <div class="bg-white rounded-xl shadow p-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyNu6dyOFIoksRLfV77w1bMkVW8UB-sGnI8Q&s"
+                        class="w-full h-48 rounded-xl mb-4" />
+                    <h4 class="font-semibold text-lg">Ahmedabad</h4>
+                    <p class="text-sm text-gray-500">Pickup 15 Jul - Drop 17 Jul</p>
+                    <p class="mt-2 font-bold">from ₹849/day</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-10">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+
+            <!-- Logo and Social Icons -->
+            <div class="space-y-2" style="margin-top: -50px;margin-left: -30px;">
+                <div class=" h-40 w-70"><img src="./media/favicon.png" alt=""></div> <!-- Logo Placeholder -->
+                <div class="flex space-x-4 p-5 ml-3 w-fit ">
+                    <a href="#" class="p-2 rounded-full">
+                        <i class="fab fa-twitter text-black text-3xl hover:text-purple-600"></i>
+                    </a>
+                    <a href="#" class=" p-2 rounded-full">
+                        <i class="fab fa-facebook-f text-black text-3xl hover:text-purple-600"></i>
+                    </a>
+                    <a href="#" class=" p-2 rounded-full">
+                        <i class="fab fa-instagram text-black text-3xl hover:text-purple-600"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Information Links -->
+            <div>
+                <h3 class="text-lg font-semibold text-black mb-4">Information</h3>
+                <ul class="space-y-2 text-sm text-black">
+                    <li><a href="#" class="hover:text-purple-600">Online Enquiry</a></li>
+                    <li><a href="#" class="hover:text-purple-600">General Enquiry</a></li>
+                    <li><a href="#" class="hover:text-purple-600">Booking</a></li>
+                    <li><a href="#" class="hover:text-purple-600">Privacy</a></li>
+                    <li><a href="#" class="hover:text-purple-600">Refund Policy</a></li>
+                    <li><a href="#" class="hover:text-purple-600">Call Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Experience Links -->
+            <div>
+                <h3 class="text-lg font-semibold text-black mb-4">Experience</h3>
+                <ul class="space-y-2 text-sm text-black">
+                    <li><a href="#" class="hover:text-purple-600">Adventure</a></li>
+                    <li><a href="#" class="hover:text-purple-600">Hotel and Restaurant</a></li>
+                    <li><a href="#" class="hover:text-purple-600">Beach</a></li>
+                    <li><a href="#" class="hover:text-purple-600">Nature</a></li>
+                    <li><a href="#" class="hover:text-purple-600">Camping</a></li>
+                    <li><a href="#" class="hover:text-purple-600">Party</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-lg font-semibold text-black mb-4">Have a Questions?</h3>
+                <ul class="space-y-4 text-sm text-black">
+                    <li class="flex items-start space-x-2">
+                        <i class="fas fa-map-marker-alt mt-1"></i>
+                        <span>203 Fake St. Mountain View, San Francisco, California, USA</span>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                        <i class="fas fa-phone"></i>
+                        <span>022-6423863</span>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@vinodhayatra.com</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+<script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+    });
+
+
+
+    //carosel
+
+    let index = 0;
+    const carousel = document.getElementById("carousel");
+    const totalSlides = carousel.children.length;
+
+    function updateCarousel() {
+        carousel.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    function nextSlide() {
+        index = (index + 1) % totalSlides;
+        updateCarousel();
+    }
+
+    function prevSlide() {
+        index = (index - 1 + totalSlides) % totalSlides;
+        updateCarousel();
+    }
+
+    // Optional: Auto-slide every 4 seconds
+    setInterval(nextSlide, 4000);
+
+</script>
+
+</html>

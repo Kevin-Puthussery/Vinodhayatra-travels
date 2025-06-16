@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Top Adventure Activities</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@700&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        crossorigin="anonymous" />
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4287/4287725.png" />
+    <link rel="stylesheet" href="stay.html">
+</head>
+
+<body class="bg-[#FDF6E3] font-['Alegreya'] font-bold text-black">
+    <style>
+        .star {
+            color: #fbbf24;
+        }
+    </style>
+    </head>
+
+    <body class="bg-gray-50 text-gray-800">
+
+        <!-- Header -->
+        <header class="bg-white shadow-md p-4 sticky top-0 z-50">
+            <div class="max-w-7xl mx-auto flex items-center justify-between">
+                <h1 class="text-xl font-bold">Top Adventure Activities</h1>
+                <input type="text" id="searchBox" placeholder="Search activity..."
+                    class="border px-3 py-1 rounded-md shadow-sm w-64 focus:outline-none" onkeyup="filterServices()">
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="max-w-7xl mx-auto px-4 py-8">
+            <h2 class="text-2xl font-semibold mb-6">Most Thrilling Adventures Offered Worldwide</h2>
+
+            <div id="serviceList" class="grid md:grid-cols-2 gap-6">
+
+                <!-- Skydiving -->
+                <div class="service-card bg-white rounded-xl shadow p-4" data-title="Skydiving">
+                    <img src="https://images.unsplash.com/photo-1601024445121-e5b82f020549?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHNreWRpdmluZ3xlbnwwfHwwfHx8MA%3D%3D"
+                        alt="Skydiving" class="w-full h-48 object-cover rounded-md mb-3">
+                    <h3 class="text-xl font-bold">Skydiving</h3>
+                    <p class="text-sm text-gray-500 mb-1">Jump from 15,000 feet and experience pure adrenaline.</p>
+                    <p class="text-sm">Popular in Dubai, Switzerland, New Zealand.</p>
+                    <div class="flex justify-between mt-4 items-center">
+                        <div class="flex text-sm gap-1"><span class="star">★</span><span class="star">★</span><span
+                                class="star">★</span><span class="star">★</span><span>☆</span></div>
+                        <span class="text-gray-500 text-sm">🪂 Bucket-list thrill</span>
+                    </div>
+                    <p class="text-xs text-gray-400 mt-2">"Unforgettable rush of a lifetime!"</p>
+                </div>
+
+                <!-- Scuba Diving -->
+                <div class="service-card bg-white rounded-xl shadow p-4" data-title="Scuba Diving">
+                    <img src="https://media.istockphoto.com/id/498283106/photo/underwater-scuba-diver-explore-and-enjoy-coral-reef-sea-life.jpg?s=612x612&w=0&k=20&c=xOj00xaZTpy5-AtKvMvIHHfexz9miSSct_CXb6F9KVA="
+                        alt="Scuba Diving" class="w-full h-48 object-cover rounded-md mb-3">
+                    <h3 class="text-xl font-bold">Scuba Diving</h3>
+                    <p class="text-sm text-gray-500 mb-1">Explore vibrant coral reefs and marine life.</p>
+                    <p class="text-sm">Best in Maldives, Great Barrier Reef, Red Sea.</p>
+                    <div class="flex justify-between mt-4 items-center">
+                        <div class="flex text-sm gap-1"><span class="star">★</span><span class="star">★</span><span
+                                class="star">★</span><span class="star">★</span><span class="star">☆</span></div>
+                        <span class="text-gray-500 text-sm">🌊 Dive certified</span>
+                    </div>
+                    <p class="text-xs text-gray-400 mt-2">"Magical underwater world!"</p>
+                </div>
+
+                <!-- Mountain Trekking -->
+                <div class="service-card bg-white rounded-xl shadow p-4" data-title="Mountain Trekking">
+                    <img src="https://plus.unsplash.com/premium_photo-1677002240252-af3f88114efc?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dHJla2tpbmd8ZW58MHx8MHx8fDA%3D"
+                        alt="Mountain Trekking" class="w-full h-48 object-cover rounded-md mb-3">
+                    <h3 class="text-xl font-bold">Mountain Trekking</h3>
+                    <p class="text-sm text-gray-500 mb-1">High-altitude hikes with stunning views.</p>
+                    <p class="text-sm">Popular: Everest Base Camp, Inca Trail, Kilimanjaro.</p>
+                    <div class="flex justify-between mt-4 items-center">
+                        <div class="flex text-sm gap-1"><span class="star">★</span><span class="star">★</span><span
+                                class="star">★</span><span class="star">★</span><span>☆</span></div>
+                        <span class="text-gray-500 text-sm">🥾 For nature lovers</span>
+                    </div>
+                    <p class="text-xs text-gray-400 mt-2">"A test of endurance and beauty."</p>
+                </div>
+
+                <!-- Desert Safari -->
+                <div class="service-card bg-white rounded-xl shadow p-4" data-title="Desert Safari">
+                    <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/13/bb/6a/7b.jpg"
+                        alt="Desert Safari" class="w-full h-48 object-cover rounded-md mb-3">
+                    <h3 class="text-xl font-bold">Desert Safari</h3>
+                    <p class="text-sm text-gray-500 mb-1">Ride dunes, enjoy local culture & sunset views.</p>
+                    <p class="text-sm">Top destinations: Dubai, Rajasthan, Sahara.</p>
+                    <div class="flex justify-between mt-4 items-center">
+                        <div class="flex text-sm gap-1"><span class="star">★</span><span class="star">★</span><span
+                                class="star">★</span><span class="star">☆</span><span>☆</span></div>
+                        <span class="text-gray-500 text-sm">🐪 Cultural ride</span>
+                    </div>
+                    <p class="text-xs text-gray-400 mt-2">"An Arabian adventure!"</p>
+                </div>
+
+                <!-- Bungee Jumping -->
+                <div class="service-card bg-white rounded-xl shadow p-4" data-title="Bungee Jumping">
+                    <img src="https://i0.wp.com/apeejay.news/wp-content/uploads/2025/01/310125-bungee-jumping-F.jpg?resize=569%2C509&ssl=1"
+                        alt="Bungee Jumping" class="w-full h-48 object-cover rounded-md mb-3">
+                    <h3 class="text-xl font-bold">Bungee Jumping</h3>
+                    <p class="text-sm text-gray-500 mb-1">Leap off bridges or cliffs with a safety cord.</p>
+                    <p class="text-sm">Try in New Zealand, Macau, South Africa.</p>
+                    <div class="flex justify-between mt-4 items-center">
+                        <div class="flex text-sm gap-1"><span class="star">★</span><span class="star">★</span><span
+                                class="star">★</span><span class="star">☆</span><span>☆</span></div>
+                        <span class="text-gray-500 text-sm">🏞️ Daredevil drop</span>
+                    </div>
+                    <p class="text-xs text-gray-400 mt-2">"Screamed and survived!"</p>
+                </div>
+
+                <!-- Whitewater Rafting -->
+                <div class="service-card bg-white rounded-xl shadow p-4" data-title="Whitewater Rafting">
+                    <img src="https://res.cloudinary.com/simpleview/image/upload/v1724965417/clients/bigskymt/fieldandforest_visitbigsky_rafting_M02_medium_bb8e8c7c-b18b-4e7f-9a8e-dd7ed8b440ee.jpg"
+                        alt="Whitewater Rafting" class="w-full h-48 object-cover rounded-md mb-3">
+                    <h3 class="text-xl font-bold">Whitewater Rafting</h3>
+                    <p class="text-sm text-gray-500 mb-1">Paddle through raging rapids on scenic rivers.</p>
+                    <p class="text-sm">Best rivers: Zambezi, Ganges, Colorado.</p>
+                    <div class="flex justify-between mt-4 items-center">
+                        <div class="flex text-sm gap-1"><span class="star">★</span><span class="star">★</span><span
+                                class="star">★</span><span class="star">★</span><span>☆</span></div>
+                        <span class="text-gray-500 text-sm">🚣 Team adventure</span>
+                    </div>
+                    <p class="text-xs text-gray-400 mt-2">"Got soaked and loved it!"</p>
+                </div>
+                <a href="booking.html"><button
+                        class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+                        Book Now
+                    </button></a>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-white shadow-inner p-4 text-center text-sm text-gray-500">
+            &copy; 2025 GlobalAdventures. All rights reserved.
+        </footer>
+
+        <!-- JS for Search -->
+        <script>
+            function filterServices() {
+                const input = document.getElementById('searchBox').value.toLowerCase();
+                const cards = document.querySelectorAll('.service-card');
+
+                cards.forEach(card => {
+                    const title = card.getAttribute('data-title').toLowerCase();
+                    card.style.display = title.includes(input) ? "block" : "none";
+                });
+            }
+        </script>
+
+    </body>
+
+</html>
