@@ -2,43 +2,88 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Top Adventure Activities</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@700&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <title>Vinodhayatra :: Services</title>
+  <!--Tailwind Css CDN-->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        crossorigin="anonymous" />
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4287/4287725.png" />
-    <link rel="stylesheet" href="stay.html">
+  <!--Favicons-->
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4287/4287725.png"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--Google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Play:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech&family=Space+Grotesk:wght@300..700&family=Tagesschrift&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@700&display=swap" rel="stylesheet">
+  <!--Stylesheet-->
+  <link rel="stylesheet" href="./style.css">
+  <!--Favicon-->
+  <link rel="icon" href="./media/favicon.png">
+  <!--Fontawesome CDN-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+      font-family: 'Alegreya', serif;
+      font-weight: 700;
+      /*background-color: #FDF6E3;*/
+      font-style: normal;
+    }
+  </style>
 </head>
+<body class="bg-[#FDF6E3]">
 
-<body class="bg-[#FDF6E3] font-['Alegreya'] font-bold text-black">
-    <style>
-        .star {
-            color: #fbbf24;
-        }
-    </style>
-    </head>
+ <!--navbar-->
+  <nav class="">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="flex justify-between items-center h-16 relative">
+
+                <!-- Logo (left) -->
+                <div class="flex items-center" style="width: 180px;">
+                    <a href="#" class=""><img src="./media/favicon.png" alt=""></a>
+                </div>
+
+                <!-- Centered Nav Links -->
+                <div class="hidden md:flex space-x-8 items-center absolute left-1/2 transform -translate-x-1/2">
+                    <a href="./index.html" class="text-black-700 hover:text-purple-600 text-2xl">HOME</a>
+                    <a href="./destination.html" class="text-black-700 hover:text-purple-600 text-2xl">HOLIDAYS</a>
+                    <a href="./stays.html" class="text-black-700 hover:text-purple-600 text-2xl">STAYS</a>
+                    <a href="./services.html" class="text-black-700 hover:text-purple-600 text-2xl">SERVICES</a>
+                    <a href="./bookings.html" class="text-black-700 hover:text-purple-600 text-2xl">BOOKINGS</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-black focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden px-4 pt-13 pb-4 space-y-1">
+            <a href="./index.html" class="block text-gray-700 hover:text-indigo-600 text-xl">HOME</a>
+            <a href="./destination.html" class="block text-gray-700 hover:text-indigo-600 text-xl">HOLIDAYS</a>
+            <a href="./stays.html" class="block text-gray-700 hover:text-indigo-600 text-xl">STAYS</a>
+            <a href="./services.html" class="block text-gray-700 hover:text-indigo-600 text-xl">SERVICES</a>
+            <a href="./bookings.html" class="block text-gray-700 hover:text-indigo-600 text-xl">BOOKINGS</a>
+        </div>
+    </nav>
 
     <body class="bg-gray-50 text-gray-800">
 
-        <!-- Header -->
-        <header class="bg-white shadow-md p-4 sticky top-0 z-50">
-            <div class="max-w-7xl mx-auto flex items-center justify-between">
-                <h1 class="text-xl font-bold">Top Adventure Activities</h1>
-                <input type="text" id="searchBox" placeholder="Search activity..."
-                    class="border px-3 py-1 rounded-md shadow-sm w-64 focus:outline-none" onkeyup="filterServices()">
-            </div>
-        </header>
 
         <!-- Main Content -->
-        <main class="max-w-7xl mx-auto px-4 py-8">
-            <h2 class="text-2xl font-semibold mb-6">Most Thrilling Adventures Offered Worldwide</h2>
+        <div class="max-w-7xl mx-auto px-4 py-8">
+            <h2 class="text-2xl text-center font-semibold mb-6">Most Thrilling Adventures Offered Worldwide</h2>
 
             <div id="serviceList" class="grid md:grid-cols-2 gap-6">
 
@@ -131,31 +176,113 @@
                     </div>
                     <p class="text-xs text-gray-400 mt-2">"Got soaked and loved it!"</p>
                 </div>
-                <a href="booking.html"><button
-                        class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
-                        Book Now
-                    </button></a>
+                
             </div>
-        </main>
+        </div>
 
-        <!-- Footer -->
-        <footer class="bg-white shadow-inner p-4 text-center text-sm text-gray-500">
-            &copy; 2025 GlobalAdventures. All rights reserved.
-        </footer>
+ <!-- Footer -->
+  <footer class="bg-[#FDF6E3] text-white py-10">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
 
-        <!-- JS for Search -->
-        <script>
-            function filterServices() {
-                const input = document.getElementById('searchBox').value.toLowerCase();
-                const cards = document.querySelectorAll('.service-card');
+      <!-- Logo and Social Icons -->
+      <div class="space-y-2" style="margin-top: -50px;margin-left: -30px;">
+        <div class=" h-40 w-70"><img src="./media/favicon.png" alt=""></div> <!-- Logo Placeholder -->
+        <div class="flex space-x-4 p-5 ml-3 w-fit ">
+          <a href="#" class="p-2 rounded-full">
+            <i class="fab fa-twitter text-black text-3xl hover:text-purple-600"></i>
+          </a>
+          <a href="#" class=" p-2 rounded-full">
+            <i class="fab fa-facebook-f text-black text-3xl hover:text-purple-600"></i>
+          </a>
+          <a href="#" class=" p-2 rounded-full">
+            <i class="fab fa-instagram text-black text-3xl hover:text-purple-600"></i>
+          </a>
+        </div>
+      </div>
 
-                cards.forEach(card => {
-                    const title = card.getAttribute('data-title').toLowerCase();
-                    card.style.display = title.includes(input) ? "block" : "none";
-                });
-            }
-        </script>
+      <!-- Information Links -->
+      <div>
+        <h3 class="text-lg font-semibold text-black mb-4">Information</h3>
+        <ul class="space-y-2 text-sm text-black">
+          <li><a href="#" class="hover:text-purple-600">Online Enquiry</a></li>
+          <li><a href="#" class="hover:text-purple-600">General Enquiry</a></li>
+          <li><a href="#" class="hover:text-purple-600">Booking</a></li>
+          <li><a href="#" class="hover:text-purple-600">Privacy</a></li>
+          <li><a href="#" class="hover:text-purple-600">Refund Policy</a></li>
+          <li><a href="#" class="hover:text-purple-600">Call Us</a></li>
+        </ul>
+      </div>
 
-    </body>
+      <!-- Experience Links -->
+      <div>
+        <h3 class="text-lg font-semibold text-black mb-4">Experience</h3>
+        <ul class="space-y-2 text-sm text-black">
+          <li><a href="#" class="hover:text-purple-600">Adventure</a></li>
+          <li><a href="#" class="hover:text-purple-600">Hotel and Restaurant</a></li>
+          <li><a href="#" class="hover:text-purple-600">Beach</a></li>
+          <li><a href="#" class="hover:text-purple-600">Nature</a></li>
+          <li><a href="#" class="hover:text-purple-600">Camping</a></li>
+          <li><a href="#" class="hover:text-purple-600">Party</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div>
+        <h3 class="text-lg font-semibold text-black mb-4">Have a Questions?</h3>
+        <ul class="space-y-4 text-sm text-black">
+          <li class="flex items-start space-x-2">
+            <i class="fas fa-map-marker-alt mt-1"></i>
+            <span>203 Fake St. Mountain View, San Francisco, California, USA</span>
+          </li>
+          <li class="flex items-center space-x-2">
+            <i class="fas fa-phone"></i>
+            <span>022-6423863</span>
+          </li>
+          <li class="flex items-center space-x-2">
+            <i class="fas fa-envelope"></i>
+            <span>info@vinodhayatra.com</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+
+<script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+    });
+
+
+
+    //carosel
+
+    let index = 0;
+    const carousel = document.getElementById("carousel");
+    const totalSlides = carousel.children.length;
+
+    function updateCarousel() {
+        carousel.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    function nextSlide() {
+        index = (index + 1) % totalSlides;
+        updateCarousel();
+    }
+
+    function prevSlide() {
+        index = (index - 1 + totalSlides) % totalSlides;
+        updateCarousel();
+    }
+
+    // Optional: Auto-slide every 4 seconds
+    setInterval(nextSlide, 4000);
+
+</script>
 
 </html>
