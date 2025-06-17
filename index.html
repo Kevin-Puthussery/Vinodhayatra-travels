@@ -43,64 +43,76 @@
 
         </div>
 
-        <div class="hidden md:flex items-center gap-6 text-sm">
-          <div class="flex items-center gap-2">
-            <button class="bg-orange-500 hover:bg-purple-500 text-white px-4 py-2 rounded-lg w-full">Sign In</button>
-          </div>
-          <div class="flex items-center gap-2">
-            <span role="img" aria-label="smile">😊</span>
-            <div>
-              <div class="font-medium">1M+ Travelled</div>
-              <div class="text-xs">Happy Guest</div>
-            </div>
-          </div>
-          <div class="flex items-center gap-2">
-            <span role="img" aria-label="diamond">💎</span>
-            <div>
-              <div class="font-medium">All Group Tours</div>
-              <div class="text-xs">Family Tours</div>
-            </div>
-          </div>
-          <div class="flex items-center gap-2 font-bold">
-            <span role="img" aria-label="phone">📞</span>
-            <span>1800 266 1100</span>
-          </div>
+  <!-- Desktop View Items -->
+  <div class="hidden md:flex flex-wrap items-center gap-6 text-sm">
+    <!-- Sign In -->
+    <button class="bg-orange-500 hover:bg-purple-500 text-white px-4 py-2 rounded-lg">Sign In</button>
 
-          <button
-            class="bg-purple-800 hover:bg-yellow-600 text-white px-4 py-2 rounded-lg transition-all duration-200">Book
-            With Expert</button>
-        </div>
-        <button id="menuBtn" class="md:hidden focus:outline-none text-xl">
-          <i class="fas fa-bars"></i>
-        </button>
+    <!-- 1M+ Travelled -->
+    <div class="flex items-center gap-2">
+      <span>😊</span>
+      <div>
+        <div class="font-medium">1M+ Travelled</div>
+        <div class="text-xs">Happy Guest</div>
       </div>
+    </div>
 
-      <!-- Mobile Nav -->
-      <div id="mobileMenu" class="hidden md:hidden mt-4 space-y-4 text-sm px-2">
-        <div class="">
-          <button class="bg-orange-500 hover:bg-purple-500 text-white px-4 py-2 rounded-lg w-full">Sign In</button>
-        </div>
-        <div class="flex gap-2 items-center">
-          <span>😊</span>
-          <div>
-            <div class="font-medium">1M+ Travelled</div>
-            <div class="text-xs">Happy Guest</div>
-          </div>
-        </div>
-        <div class="flex gap-2 items-center">
-          <span>💎</span>
-          <div>
-            <div class="font-medium">All Group Tours</div>
-            <div class="text-xs">Family Tours</div>
-          </div>
-        </div>
-        <div class="flex gap-2 items-center font-bold">
-          <span>📞</span>
-          <span>1800 266 1100</span>
-        </div>
-        <button class="bg-green-500 hover:bg-purple-500 text-white px-4 py-2 rounded-lg w-full">Book With
-          Expert</button>
+    <!-- All Group Tours -->
+    <div class="flex items-center gap-2">
+      <span>💎</span>
+      <div>
+        <div class="font-medium">All Group Tours</div>
+        <div class="text-xs">Family Tours</div>
       </div>
+    </div>
+
+    <!-- Phone -->
+    <div class="flex items-center gap-2 font-bold">
+      <span>📞</span>
+      <span>1800 266 1100</span>
+    </div>
+
+    <!-- Book With Expert -->
+    <button class="bg-purple-800 hover:bg-yellow-600 text-white px-4 py-2 rounded-lg transition-all duration-200">
+      Book With Expert
+    </button>
+  </div>
+
+  <!-- Hamburger Button for Mobile - aligned right -->
+  <button id="menuBtn" class="md:hidden text-xl ml-auto">
+    <i class="fas fa-bars"></i>
+  </button>
+</div>
+
+<!-- Mobile Nav (Dropdown) -->
+<div id="mobileMenu" class="hidden md:hidden mt-4 space-y-4 text-sm px-4 pb-4">
+  <button class="bg-orange-500 hover:bg-purple-500 text-white px-4 py-2 rounded-lg w-full">Sign In</button>
+
+  <div class="flex gap-2 items-center">
+    <span>😊</span>
+    <div>
+      <div class="font-medium">1M+ Travelled</div>
+      <div class="text-xs">Happy Guest</div>
+    </div>
+  </div>
+
+  <div class="flex gap-2 items-center">
+    <span>💎</span>
+    <div>
+      <div class="font-medium">All Group Tours</div>
+      <div class="text-xs">Family Tours</div>
+    </div>
+  </div>
+
+  <div class="flex gap-2 items-center font-bold">
+    <span>📞</span>
+    <span>1800 266 1100</span>
+  </div>
+
+  <button class="bg-purple-800 hover:bg-yellow-600 text-white px-4 py-2 rounded-lg w-full">
+    Book With Expert
+  </button>
+</div>
     </nav>
 
     <!-- Navigation Links -->
