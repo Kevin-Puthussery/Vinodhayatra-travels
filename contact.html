@@ -79,122 +79,50 @@
   </nav>
 
 <div
-    class="opacity-80 w-full h-64 md:h-90 bg-[url('https://static.vecteezy.com/system/resources/previews/000/358/274/non_2x/vector-hotel-online-booking-banner.jpg')] bg-cover bg-center">
+    class="opacity-80 w-full h-64 md:h-90 bg-[url('https://7sigmaexperiences.com/data1/images/c4.jpg')] bg-cover bg-center">
   </div>
 
-<div class="py-6 pt-10">
+ <!-- Contact Section -->
+  <section class="py-12">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10">
 
-<div class="max-w-3xl mx-auto p-5 pt-10 border rounded shadow">
-    <h2 class="text-xl text-center font-semibold mb-4">Fill in your details</h2>
-
-    <!-- Tour Type -->
-    <div class="mb-6">
-      <label class="flex items-center space-x-2 font-medium mb-2">
-        <span>⭐</span>
-        <span>Tour Type</span>
-      </label>
-      <select class="w-full border rounded px-3 py-2">
-        <option>Standard</option>
-        <option>Deluxe</option>
-        <option>Luxury</option>
-      </select>
-    </div>
-
-    <!-- Travellers -->
-    <div class="mb-6">
-      <div class="flex items-center space-x-2 font-medium mb-4">
-        <span>👤</span>
-        <span>Travellers</span>
-      </div>
-      <div class="ml-8 text-sm text-gray-600 mb-2">Room 1 <button class="text-blue-700 font-semibold ml-2"><span class="text-xl">+</span> Add Room</button></div>
-
-      <div class="grid grid-cols-4 gap-4 text-center">
-        <!-- Adult -->
+      <!-- Contact Info -->
+      <div class="space-y-6">
+        <h2 class="text-2xl font-semibold">Get in touch</h2>
+        <p>We'd love to hear from you. Fill out the form and we’ll get back to you shortly.</p>
         <div>
-          <div class="mb-1">Adult</div>
-          <div class="flex items-center justify-center border rounded">
-            <button class="px-3 py-1 text-xl">−</button>
-            <input type="text" value="2" class="w-10 text-center outline-none" />
-            <button class="px-3 py-1 text-xl">+</button>
-          </div>
-          <div class="text-xs text-gray-500 mt-1">12+ yrs</div>
+          <p class="font-medium">📍 Address:</p>
+          <p>123 Main Street, Your City, India</p>
         </div>
-        <!-- Child with bed -->
         <div>
-          <div class="mb-1">Child (With bed)</div>
-          <div class="flex items-center justify-center border rounded">
-            <button class="px-3 py-1 text-xl">−</button>
-            <input type="text" value="0" class="w-10 text-center outline-none" />
-            <button class="px-3 py-1 text-xl">+</button>
-          </div>
-          <div class="text-xs text-gray-500 mt-1">Below 12 yrs</div>
+          <p class="font-medium">📞 Phone:</p>
+          <p>+91 9876543210</p>
         </div>
-        <!-- Child without bed -->
         <div>
-          <div class="mb-1">Child (Without bed)</div>
-          <div class="flex items-center justify-center border rounded">
-            <button class="px-3 py-1 text-xl">−</button>
-            <input type="text" value="0" class="w-10 text-center outline-none" />
-            <button class="px-3 py-1 text-xl">+</button>
-          </div>
-          <div class="text-xs text-gray-500 mt-1">Below 12 yrs</div>
-        </div>
-        <!-- Infant -->
-        <div>
-          <div class="mb-1">Infant</div>
-          <div class="flex items-center justify-center border rounded">
-            <button class="px-3 py-1 text-xl">−</button>
-            <input type="text" value="0" class="w-10 text-center outline-none" />
-            <button class="px-3 py-1 text-xl">+</button>
-          </div>
-          <div class="text-xs text-gray-500 mt-1">0–2 yrs</div>
+          <p class="font-medium">✉️ Email:</p>
+          <p>support@example.com</p>
         </div>
       </div>
-    </div>
 
-    <!-- Date of Travel -->
-    <div class="mb-6">
-      <label class="flex items-center space-x-2 font-medium mb-2">
-        <span>📅</span>
-        <span>Date of Travel</span>
-      </label>
-      <input type="date" class="w-full border rounded px-3 py-2" />
+      <!-- Contact Form -->
+      <form class="bg-white p-8 shadow rounded-lg space-y-6">
+        <div>
+          <label for="name" class="block font-medium mb-1">Full Name</label>
+          <input type="text" id="name" placeholder="Your Name" class="w-full border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+        <div>
+          <label for="email" class="block font-medium mb-1">Email</label>
+          <input type="email" id="email" placeholder="your@email.com" class="w-full border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+        <div>
+          <label for="message" class="block font-medium mb-1">Message</label>
+          <textarea id="message" rows="4" placeholder="Write your message here..." class="w-full border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700 transition">Send Message</button>
+      </form>
     </div>
+  </section>
 
-    <!-- Contact Details -->
-    <div class="mb-4">
-      <label class="flex items-center space-x-2 font-medium mb-2">
-        <span>📞</span>
-        <span>Contact Details</span>
-      </label>
-      <div class="grid grid-cols-2 gap-4">
-        <input type="text" placeholder="Mobile" class="border rounded px-3 py-2 w-full" />
-        <input type="email" placeholder="Email" class="border rounded px-3 py-2 w-full" />
-      </div>
-      <p class="text-sm italic mt-2 text-gray-600">Your booking details will be sent on these contact details.</p>
-    </div>
-
-    <!-- Terms Checkbox -->
-    <div class="mb-4">
-      <label class="inline-flex items-center space-x-2 text-sm">
-        <input type="checkbox" class="form-checkbox text-blue-600" checked />
-        <span>I accept the <a href="#" class="text-blue-800 font-semibold">Privacy Policy</a> & <a href="#" class="text-blue-800 font-semibold">Terms & Conditions</a></span>
-      </label>
-    </div>
-
-    <!-- Submit Button -->
-    <button class="w-full bg-blue-700 text-white py-3 rounded text-lg font-semibold hover:bg-blue-700 transition">
-  Book Now
-</button>
-
-    <!-- Footer Links -->
-    <div class="flex justify-center space-x-8 text-sm text-blue-700 font-medium border-t mt-6 pt-4">
-      <a href="#">Payment terms</a>
-      <a href="#">Cancellation Policy</a>
-      <a href="#">Terms & Conditions</a>
-    </div>
-  </div>
-</div>
 
 
 
